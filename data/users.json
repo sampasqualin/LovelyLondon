@@ -1,0 +1,11 @@
+[
+    {
+        "id": 1,
+        "username": "carol_admin",
+        "email": "carol@lovelylondon.com",
+        "password_hash": "$2y$10$1obAzqqd8sGXZKP5azgS/.UIxP/szbIWhaiGiLidBU7Kt4MhexfD6",
+        "role": "admin",
+        "created_at": "2025-10-21 20:45:26",
+        "last_login": null
+    }
+]

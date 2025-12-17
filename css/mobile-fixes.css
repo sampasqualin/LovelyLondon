@@ -1,0 +1,885 @@
+/* =============================================================================
+   LOVELY LONDON - CORREÇÕES MOBILE COMPLETAS
+   Otimizações para dispositivos móveis
+   ============================================================================= */
+
+/* =============================================================================
+   1. MENU MOBILE - REDUZIDO E OTIMIZADO
+   ============================================================================= */
+
+@media (max-width: 992px) {
+    /* Menu mobile: altura reduzida e mais compacto */
+    .nav {
+        position: fixed;
+        top: 70px; /* Reduzido para colar melhor no header */
+        left: -100%;
+        right: 0;
+        width: 100%;
+        height: auto !important; /* Altura automática ao invés de tela cheia */
+        max-height: 80vh; /* Máximo 80% da altura da tela */
+        background: var(--lovely);
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        padding: var(--spacing-sm) var(--spacing-md) var(--spacing-md) !important; /* Padding top reduzido */
+        gap: var(--spacing-sm) !important; /* Gap reduzido entre itens */
+        transition: left var(--transition-base);
+        z-index: var(--z-dropdown);
+        overflow-y: auto; /* Scroll se necessário */
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+        border-top: 1px solid rgba(255, 255, 255, 0.1); /* Linha sutil para separar do header */
+    }
+
+    .nav.nav--open {
+        left: 0;
+    }
+
+    .nav .nav-link {
+        display: block;
+        width: 100%;
+        text-align: center;
+        font-size: 1rem !important; /* Font size reduzido */
+        padding: var(--spacing-sm) var(--spacing-md) !important; /* Padding reduzido */
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    .nav .nav-link:last-child {
+        border-bottom: none;
+    }
+
+    /* Logo aumentado em 20% e centralizado no mobile */
+    .logo-img {
+        height: 60px !important; /* 50px + 20% = 60px */
+    }
+
+    /* Header mais compacto */
+    .header {
+        padding: var(--spacing-xs) 0 !important;
+    }
+
+    /* Centralizar logo no mobile */
+    .header-merged-container {
+        position: relative !important;
+        display: flex !important;
+        justify-content: center !important;
+        align-items: center !important;
+    }
+
+    .logo-link {
+        margin: 0 auto !important;
+    }
+
+    /* Posicionar menu hamburguer no canto direito */
+    .header-right-controls {
+        position: absolute !important;
+        right: 0 !important;
+        top: 50% !important;
+        transform: translateY(-50%) !important;
+    }
+
+    body {
+        padding-top: 70px !important;
+    }
+
+    /* Hero/páginas grudados no header - sem espaço */
+    .hero-slider-container,
+    .page-header,
+    main,
+    main > .section:first-child,
+    .hero-section {
+        margin-top: 0 !important;
+        padding-top: 0 !important;
+    }
+}
+
+/* Mobile muito pequeno */
+@media (max-width: 480px) {
+    .nav {
+        top: 60px; /* Ainda mais próximo em telas pequenas */
+        padding: var(--spacing-sm) var(--spacing-sm) var(--spacing-md) !important;
+    }
+
+    .nav .nav-link {
+        font-size: 0.95rem !important;
+        padding: 10px var(--spacing-sm) !important;
+    }
+
+    .logo-img {
+        height: 48px !important; /* 40px + 20% = 48px */
+    }
+
+    body {
+        padding-top: 60px !important;
+    }
+
+    /* Hero/páginas grudados no header - sem espaço */
+    .hero-slider-container,
+    .page-header,
+    main,
+    main > .section:first-child,
+    .hero-section {
+        margin-top: 0 !important;
+        padding-top: 0 !important;
+    }
+}
+
+/* =============================================================================
+   2. HERO SECTION - VÍDEO COM FALLBACK PARA IMAGEM NO MOBILE
+   ============================================================================= */
+
+/* Garantir que o vídeo funcione bem em mobile */
+.hero-bg-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 0;
+}
+
+/* Fallback: esconder vídeo em telas muito pequenas e usar apenas imagem */
+@media (max-width: 768px) {
+    /* Vídeo pode não funcionar bem em mobile, então fornecemos fallback */
+    .hero-bg-video {
+        display: none; /* Esconde o vídeo em mobile */
+    }
+
+    /* A imagem de background já está definida no elemento .hero-bg como fallback */
+    .hero-slide .hero-bg {
+        display: block !important;
+        background-size: cover !important;
+        background-position: center !important;
+    }
+
+    /* Altura do hero reduzida no mobile */
+    .hero-slider-container {
+        height: 60vh !important;
+        min-height: 400px !important;
+    }
+
+    /* Conteúdo do hero mais compacto */
+    .hero-content h1 {
+        font-size: clamp(1.5rem, 6vw, 2.5rem) !important;
+        margin-bottom: var(--spacing-md) !important;
+    }
+
+    .hero-content p {
+        font-size: clamp(0.9rem, 3vw, 1.1rem) !important;
+        margin-bottom: var(--spacing-md) !important;
+    }
+
+    /* Logos de certificação menores no mobile */
+    .hero-certification-logos {
+        bottom: 10px !important;
+        gap: 8px !important;
+    }
+
+    .hero-cert-logo {
+        max-height: 30px !important;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-slider-container {
+        height: 50vh !important;
+        min-height: 350px !important;
+    }
+
+    .hero-content {
+        padding: var(--spacing-md) !important;
+    }
+
+    .hero-cert-logo {
+        max-height: 25px !important;
+    }
+}
+
+/* =============================================================================
+   3. CAROUSEL DE EMPRESAS/CLIENTES - SCROLL HORIZONTAL COM TOQUE NO MOBILE
+   ============================================================================= */
+
+/* Desktop: mantém animação automática */
+.clients-section {
+    padding: var(--spacing-xl) 0 !important;
+    background: var(--white);
+    overflow: hidden;
+}
+
+.logos {
+    display: flex;
+    gap: var(--spacing-2xl);
+    animation: logoScroll 40s linear infinite;
+    will-change: transform;
+}
+
+.logos-slide {
+    display: flex;
+    gap: var(--spacing-2xl);
+    align-items: center;
+    flex-shrink: 0;
+}
+
+/* Mobile: scroll horizontal com toque */
+@media (max-width: 768px) {
+    .clients-section {
+        overflow: visible !important;
+        padding: var(--spacing-xl) 0 var(--spacing-lg) !important;
+    }
+
+    .logos {
+        gap: var(--spacing-lg);
+        /* Animação pausada no mobile - controle via scroll */
+        animation: none !important;
+        overflow-x: auto;
+        overflow-y: hidden;
+        scroll-snap-type: x mandatory;
+        scroll-behavior: smooth;
+        -webkit-overflow-scrolling: touch; /* Smooth scroll iOS */
+        cursor: grab;
+        user-select: none;
+        padding: var(--spacing-sm) 0;
+    }
+
+    .logos:active {
+        cursor: grabbing;
+    }
+
+    /* Esconder scrollbar mas manter funcionalidade */
+    .logos::-webkit-scrollbar {
+        height: 4px;
+    }
+
+    .logos::-webkit-scrollbar-track {
+        background: transparent;
+    }
+
+    .logos::-webkit-scrollbar-thumb {
+        background: rgba(112, 4, 32, 0.3);
+        border-radius: 2px;
+    }
+
+    .logos::-webkit-scrollbar-thumb:hover {
+        background: rgba(112, 4, 32, 0.5);
+    }
+
+    .logos-slide {
+        gap: var(--spacing-lg);
+        scroll-snap-align: start;
+    }
+
+    .logos img {
+        height: 40px !important;
+        width: auto;
+        object-fit: contain;
+        filter: grayscale(100%) opacity(0.6);
+        transition: all 0.3s ease;
+        scroll-snap-align: center;
+    }
+
+    .logos img:hover,
+    .logos img:active {
+        filter: grayscale(0%) opacity(1);
+        transform: scale(1.05);
+    }
+
+    .clients-section h2 {
+        font-size: 1.25rem !important;
+        margin-bottom: var(--spacing-sm) !important;
+    }
+
+    /* Indicador visual de scroll */
+    .clients-section::after {
+        content: '← Deslize →';
+        display: block;
+        text-align: center;
+        font-size: 0.75rem;
+        color: #999;
+        margin-top: var(--spacing-sm);
+        font-style: italic;
+    }
+}
+
+@media (max-width: 480px) {
+    .logos {
+        gap: var(--spacing-md);
+    }
+
+    .logos-slide {
+        gap: var(--spacing-md);
+    }
+
+    .logos img {
+        height: 30px !important;
+    }
+}
+
+/* =============================================================================
+   4. CARDS GRID - 2 COLUNAS NO MOBILE COM TEXTO REDUZIDO
+   ============================================================================= */
+
+/* Cards sempre 2 por linha no mobile */
+@media (max-width: 768px) {
+    .promo-grid,
+    .promo-grid-4col {
+        grid-template-columns: repeat(2, 1fr) !important;
+        gap: var(--spacing-sm) !important;
+    }
+
+    /* Reduzir padding dos cards */
+    .promo-card {
+        height: auto !important;
+    }
+
+    /* Título dos cards menor */
+    .promo-title {
+        font-size: 0.85rem !important;
+        line-height: 1.3 !important;
+        padding: 0 !important;
+    }
+
+    .promo-card h3 {
+        font-size: 1rem !important;
+        padding: var(--spacing-sm) var(--spacing-md) !important;
+    }
+
+    /* Espaçamento reduzido */
+    .promo-item {
+        gap: 6px !important;
+    }
+}
+
+@media (max-width: 480px) {
+    .promo-grid,
+    .promo-grid-4col {
+        gap: 8px !important;
+    }
+
+    .promo-title {
+        font-size: 0.75rem !important;
+        line-height: 1.2 !important;
+    }
+
+    .promo-card h3 {
+        font-size: 0.9rem !important;
+        padding: 8px var(--spacing-sm) !important;
+    }
+}
+
+/* =============================================================================
+   5. SEÇÕES E TÍTULOS - ESPAÇAMENTO OTIMIZADO
+   ============================================================================= */
+
+@media (max-width: 768px) {
+    .section {
+        padding: var(--spacing-xl) 0 var(--spacing-2xl) !important;
+    }
+
+    .section-title {
+        font-size: clamp(1.5rem, 5vw, 2rem) !important;
+        margin-top: var(--spacing-lg) !important;
+        margin-bottom: var(--spacing-md) !important;
+    }
+
+    .section-subtitle {
+        font-size: 0.9rem !important;
+        margin-bottom: var(--spacing-lg) !important;
+    }
+
+    .container {
+        padding: 0 var(--spacing-md) !important;
+    }
+}
+
+@media (max-width: 480px) {
+    .section {
+        padding: var(--spacing-lg) 0 var(--spacing-xl) !important;
+    }
+
+    .section-title {
+        font-size: 1.5rem !important;
+        margin-top: var(--spacing-md) !important;
+    }
+
+    .section-subtitle {
+        font-size: 0.85rem !important;
+    }
+
+    .container {
+        padding: 0 var(--spacing-sm) !important;
+    }
+}
+
+/* =============================================================================
+   6. BOTÕES - TAMANHO OTIMIZADO PARA MOBILE
+   ============================================================================= */
+
+@media (max-width: 768px) {
+    .btn {
+        padding: 12px 24px !important;
+        font-size: 0.9rem !important;
+    }
+
+    .btn-outline {
+        padding: 10px 20px !important;
+        font-size: 0.85rem !important;
+    }
+
+    .btn-small {
+        padding: 8px 16px !important;
+        font-size: 0.8rem !important;
+    }
+}
+
+@media (max-width: 480px) {
+    .btn {
+        padding: 10px 20px !important;
+        font-size: 0.85rem !important;
+    }
+
+    .btn-outline {
+        padding: 8px 16px !important;
+        font-size: 0.8rem !important;
+    }
+}
+
+/* =============================================================================
+   7. HERO SPLIT LAYOUT - OTIMIZAÇÃO MOBILE
+   ============================================================================= */
+
+@media (max-width: 992px) {
+    /* Split layout vira coluna única no mobile */
+    .hero-slide-split .hero-split-content {
+        flex-direction: column !important;
+        gap: var(--spacing-lg) !important;
+    }
+
+    .hero-features-grid,
+    .hero-tours-grid {
+        grid-template-columns: repeat(2, 1fr) !important;
+        gap: var(--spacing-md) !important;
+    }
+
+    .hero-feature-item {
+        padding: var(--spacing-md) !important;
+    }
+
+    .hero-feature-item h4 {
+        font-size: 1rem !important;
+    }
+
+    .hero-feature-item p {
+        font-size: 0.85rem !important;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-features-grid,
+    .hero-tours-grid {
+        grid-template-columns: 1fr !important;
+    }
+}
+
+/* =============================================================================
+   8. PERFORMANCE E OTIMIZAÇÕES GERAIS
+   ============================================================================= */
+
+/* Otimizar renderização no mobile */
+@media (max-width: 768px) {
+    * {
+        -webkit-tap-highlight-color: rgba(112, 4, 32, 0.1);
+    }
+
+    /* Smooth scrolling otimizado */
+    html {
+        scroll-behavior: smooth;
+        -webkit-overflow-scrolling: touch;
+    }
+
+    /* Imagens otimizadas */
+    img {
+        image-rendering: -webkit-optimize-contrast;
+        image-rendering: crisp-edges;
+    }
+
+    /* Transições mais rápidas no mobile */
+    * {
+        transition-duration: 0.2s !important;
+    }
+}
+
+/* =============================================================================
+   9. TESTIMONIALS - MOBILE
+   ============================================================================= */
+
+@media (max-width: 768px) {
+    .testimonials-track {
+        gap: var(--spacing-sm) !important;
+    }
+
+    .testimonial-card {
+        min-width: calc(50% - var(--spacing-xs)) !important;
+        padding: var(--spacing-sm) !important;
+    }
+
+    .testimonial-photo {
+        width: 50px !important;
+        height: 50px !important;
+    }
+
+    .testimonial-text {
+        font-size: 0.8rem !important;
+    }
+
+    .testimonial-author {
+        font-size: 0.85rem !important;
+    }
+
+    .testimonial-location {
+        font-size: 0.75rem !important;
+    }
+}
+
+@media (max-width: 480px) {
+    .testimonial-card {
+        min-width: 100% !important;
+    }
+}
+
+/* =============================================================================
+   10. SERVICES/TOURS CARDS - MOBILE
+   ============================================================================= */
+
+@media (max-width: 768px) {
+    .service-card h3,
+    .tour-card h3 {
+        font-size: 1.1rem !important;
+    }
+
+    .tour-badge {
+        font-size: 0.65rem !important;
+        padding: 3px 8px !important;
+    }
+
+    .tour-price .price-amount {
+        font-size: 1.5rem !important;
+    }
+
+    .tour-description {
+        font-size: 0.85rem !important;
+    }
+}
+
+/* =============================================================================
+   11. FOOTER - MOBILE
+   ============================================================================= */
+
+@media (max-width: 768px) {
+    .footer-content {
+        grid-template-columns: 1fr !important;
+        gap: var(--spacing-lg) !important;
+        text-align: center !important;
+    }
+
+    .footer-column h4 {
+        font-size: 1rem !important;
+    }
+
+    .footer-column a,
+    .footer-column p {
+        font-size: 0.85rem !important;
+    }
+}
+
+/* =============================================================================
+   12. BLOG - FOTOS SEMPRE QUADRADAS (1:1)
+   ============================================================================= */
+
+/* Desktop e Mobile: fotos do blog sempre quadradas */
+.section-blog .promo-card {
+    aspect-ratio: 1 / 1 !important;
+}
+
+.section-blog .promo-card img {
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: cover !important;
+}
+
+/* =============================================================================
+   12.1. BLOG MOBILE - LAYOUT LISTA COM FOTO EMBAIXO
+   ============================================================================= */
+
+@media (max-width: 768px) {
+    /* Ajustar espaçamento da seção blog */
+    .section-blog {
+        padding-top: var(--spacing-2xl) !important;
+    }
+
+    /* Esconder elementos desnecessários no mobile */
+    .section-blog .blog-header {
+        display: none !important;
+    }
+
+    /* Grid vira lista vertical */
+    .section-blog .promo-grid-4col {
+        display: flex !important;
+        flex-direction: column !important;
+        gap: var(--spacing-md) !important;
+        margin-top: var(--spacing-md) !important;
+    }
+
+    /* Item do blog: layout vertical SEM card (limpo) */
+    .section-blog .promo-item {
+        display: flex !important;
+        flex-direction: column !important;
+        gap: var(--spacing-sm) !important;
+        background: transparent !important;
+        border-radius: 0 !important;
+        padding: 0 !important;
+        box-shadow: none !important;
+        transition: none;
+        align-items: stretch;
+        border-bottom: 1px solid #e5e5e5;
+        padding-bottom: var(--spacing-md) !important;
+        margin-bottom: var(--spacing-md) !important;
+    }
+
+    .section-blog .promo-item:last-child {
+        border-bottom: none;
+        margin-bottom: 0;
+        padding-bottom: 0 !important;
+    }
+
+    .section-blog .promo-item:hover {
+        box-shadow: none !important;
+        transform: none;
+    }
+
+    /* Conteúdo no topo */
+    .section-blog .blog-content-mobile {
+        display: flex;
+        flex-direction: column;
+        gap: var(--spacing-xs);
+        order: 1; /* Garante que o conteúdo apareça primeiro */
+    }
+
+    /* Foto oculta no mobile */
+    .section-blog .promo-card {
+        display: none !important;
+    }
+
+    /* Título do post */
+    .section-blog .promo-title {
+        font-size: 0.95rem !important;
+        font-weight: 600 !important;
+        line-height: 1.3 !important;
+        color: var(--blackfriars) !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        text-align: left !important;
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    /* Descrição do post */
+    .section-blog .blog-excerpt-mobile {
+        font-size: 0.8rem !important;
+        line-height: 1.4 !important;
+        color: var(--gray) !important;
+        margin: 0 !important;
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    /* Botão "Ler mais" */
+    .section-blog .blog-read-more {
+        display: inline-flex !important;
+        align-items: center;
+        gap: 4px;
+        font-size: 0.75rem !important;
+        font-weight: 600 !important;
+        color: var(--lovely) !important;
+        text-decoration: none;
+        margin-top: 4px;
+        transition: all 0.3s ease;
+    }
+
+    .section-blog .blog-read-more svg {
+        width: 14px;
+        height: 14px;
+        transition: transform 0.3s ease;
+    }
+
+    .section-blog .promo-item:hover .blog-read-more {
+        color: var(--notting-hill) !important;
+    }
+
+    .section-blog .promo-item:hover .blog-read-more svg {
+        transform: translateX(3px);
+    }
+
+    /* Meta info (categoria, data) */
+    .section-blog .blog-meta-mobile {
+        display: flex;
+        align-items: center;
+        gap: var(--spacing-xs);
+        font-size: 0.7rem;
+        color: #999;
+        margin-top: 2px;
+    }
+
+    .section-blog .blog-meta-mobile .category-badge {
+        background: rgba(112, 4, 32, 0.1);
+        color: var(--lovely);
+        padding: 2px 8px;
+        border-radius: 12px;
+        font-weight: 600;
+        font-size: 0.65rem;
+    }
+
+    /* Título da seção */
+    .section-blog .section-title {
+        text-align: left !important;
+        font-size: 1.5rem !important;
+        margin-top: 0 !important;
+        margin-bottom: var(--spacing-lg) !important;
+        padding-top: 0 !important;
+    }
+
+    /* Botão "Ver mais posts" */
+    .section-blog .section-footer {
+        margin-top: var(--spacing-lg) !important;
+    }
+}
+
+@media (max-width: 480px) {
+    .section-blog .promo-item {
+        padding: 0 !important;
+        gap: var(--spacing-xs) !important;
+        padding-bottom: var(--spacing-sm) !important;
+        margin-bottom: var(--spacing-sm) !important;
+    }
+
+    .section-blog .promo-title {
+        font-size: 0.9rem !important;
+    }
+
+    .section-blog .blog-excerpt-mobile {
+        font-size: 0.8rem !important;
+        -webkit-line-clamp: 3 !important;
+    }
+
+    .section-blog .blog-read-more {
+        font-size: 0.75rem !important;
+    }
+}
+
+/* =============================================================================
+   13. FORMULÁRIOS - ESPAÇAMENTO MÍNIMO ENTRE CAMPOS
+   ============================================================================= */
+
+/* Desktop e Mobile: reduzir espaçamento entre campos do formulário */
+.contact-form,
+.booking-form,
+.quote-form,
+form {
+    gap: 8px !important; /* Espaçamento mínimo entre campos */
+}
+
+.form-group {
+    margin-bottom: 0 !important;
+}
+
+.form-group + .form-group {
+    margin-top: 8px !important;
+}
+
+/* Manter o gap interno do form-group (label para input) */
+.form-group {
+    gap: 4px !important;
+}
+
+@media (max-width: 768px) {
+    .contact-form,
+    .booking-form,
+    .quote-form,
+    form {
+        gap: 6px !important;
+    }
+
+    .form-group + .form-group {
+        margin-top: 6px !important;
+    }
+}
+
+/* =============================================================================
+   14. BOTÃO FLUTUANTE WHATSAPP - SVG 100% DO TAMANHO
+   ============================================================================= */
+
+.whatsapp-float {
+    padding: 8px !important;
+}
+
+.whatsapp-float svg {
+    width: 100% !important;
+    height: 100% !important;
+    fill: var(--white) !important;
+    display: block !important;
+}
+
+/* =============================================================================
+   15. CARDS RESPONSIVOS - ESPAÇAMENTO CONSISTENTE
+   ============================================================================= */
+
+/* Desktop: sempre 4 cards por linha, espaçamento fixo */
+.promo-grid,
+.promo-grid-4col {
+    display: grid !important;
+    grid-template-columns: repeat(4, 1fr) !important;
+    gap: var(--spacing-md) !important;
+    justify-items: center !important;
+}
+
+/* Garantir que os cards preencham o espaço disponível */
+.promo-grid .promo-item,
+.promo-grid-4col .promo-item {
+    width: 100% !important;
+}
+
+/* Tablet: 3 cards por linha */
+@media (max-width: 992px) and (min-width: 769px) {
+    .promo-grid,
+    .promo-grid-4col {
+        grid-template-columns: repeat(3, 1fr) !important;
+    }
+}
+
+/* Mobile: 2 cards por linha (mantém o comportamento atual) */
+@media (max-width: 768px) {
+    .promo-grid,
+    .promo-grid-4col {
+        grid-template-columns: repeat(2, 1fr) !important;
+        gap: var(--spacing-sm) !important;
+    }
+}
+
+@media (max-width: 480px) {
+    .promo-grid,
+    .promo-grid-4col {
+        gap: 8px !important;
+    }
+}
+
+/* =============================================================================
+   16. GARANTIR QUE OS FIXES NÃO SEJAM SOBRESCRITOS
+   ============================================================================= */
+
+/* Importante: alguns estilos precisam de !important para sobrescrever
+   estilos inline ou outros CSS que podem estar conflitando */

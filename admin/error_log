@@ -1,0 +1,8 @@
+[13-Nov-2025 09:21:41 America/Fortaleza] PHP Fatal error:  Uncaught Error: Class "JSONDatabase" not found in /home2/lovely69/public_html/v2/admin/config.php:32
+Stack trace:
+#0 /home2/lovely69/public_html/v2/admin/index.php(2): require_once()
+#1 {main}
+  thrown in /home2/lovely69/public_html/v2/admin/config.php on line 32
+[13-Nov-2025 10:00:33 America/Fortaleza] DEBUG BACKGROUNDS SAVE: ID=12, DATA={"id":"12","section_name":"services_cta","section_label":"Pronto para Contratar Nossos Servi\u00e7os","background_type":"color","background_color":"#700420","text_color":"#7fa1c3","gradient_start":"#700420","gradient_end":"#dab59a","gradient_direction":"to bottom","image_opacity":"1","overlay_opacity":"0","overlay_color":"#000000","is_active":"1"}
+[13-Nov-2025 10:00:57 America/Fortaleza] DEBUG BACKGROUNDS SAVE: ID=12, DATA={"id":"12","section_name":"services_cta","section_label":"Pronto para Contratar Nossos Servi\u00e7os","background_type":"color","background_color":"#700420","text_color":"#f8f9fa","gradient_start":"#700420","gradient_end":"#dab59a","gradient_direction":"to bottom","image_opacity":"1","overlay_opacity":"0","overlay_color":"#000000","is_active":"1"}
+[13-Nov-2025 10:01:18 America/Fortaleza] DEBUG BACKGROUNDS SAVE: ID=10, DATA={"id":"10","section_name":"contact","section_label":"Se\u00e7\u00e3o Contato","background_type":"gradient","background_color":"#955425","text_color":"#f8f9fa","gradient_start":"#700420","gradient_end":"#292828","gradient_direction":"to bottom","image_opacity":"1","overlay_opacity":"0","overlay_color":"#000000","is_active":"1"}

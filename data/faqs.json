@@ -1,0 +1,68 @@
+[
+  {
+    "id": 1,
+    "question_pt": "Como funciona a reserva de um tour?",
+    "question_en": "How does booking a tour work?",
+    "answer_pt": "É muito simples! Fale comigo pelo WhatsApp ou formulário de contato, informe suas datas e interesses e eu crio um roteiro personalizado para você. Após a confirmação, você recebe todos os detalhes por e-mail.",
+    "answer_en": "It’s very simple! Contact me via WhatsApp or the contact form, share your dates and interests, and I’ll craft a personalised itinerary for you. After confirmation, you’ll receive all the details by email.",
+    "display_order": 1,
+    "is_active": 1,
+    "created_at": "2025-10-05 13:28:19",
+    "updated_at": "2025-10-05 13:28:19"
+  },
+  {
+    "id": 2,
+    "question_pt": "Qual é o tamanho dos grupos?",
+    "question_en": "What is the group size?",
+    "answer_pt": "Trabalhamos principalmente com tours privados e pequenos grupos (máximo de 6 pessoas) para garantir uma experiência mais personalizada e intimista.",
+    "answer_en": "We mainly run private tours and small groups (up to 6 people) to ensure a more personalised and intimate experience.",
+    "display_order": 2,
+    "is_active": 1,
+    "created_at": "2025-10-05 13:28:19",
+    "updated_at": "2025-10-05 13:28:19"
+  },
+  {
+    "id": 3,
+    "question_pt": "Os tours incluem ingressos para atrações?",
+    "question_en": "Do tours include attraction tickets?",
+    "answer_pt": "O valor do tour cobre o serviço de guia e planejamento. Ingressos para museus, monumentos e transporte são pagos à parte. Posso ajudar com a compra antecipada e toda a organização — inclusive opções sem filas quando disponíveis.",
+    "answer_en": "The tour price covers guiding and planning. Tickets for museums, monuments and transport are paid separately. I can help with advance purchase and all arrangements — including skip-the-line options when available.",
+    "display_order": 3,
+    "is_active": 1,
+    "created_at": "2025-10-05 13:28:19",
+    "updated_at": "2025-10-05 13:28:19"
+  },
+  {
+    "id": 4,
+    "question_pt": "Qual é a política de cancelamento?",
+    "question_en": "What is the cancellation policy?",
+    "answer_pt": "Cancelamentos com 48 horas de antecedência têm reembolso total. Entre 24–48h, reembolso de 50%. Menos de 24h não há reembolso. Em caso de emergência ou saúde, avalio com flexibilidade. Observação: ingressos de terceiros seguem políticas próprias.",
+    "answer_en": "Cancellations 48 hours in advance receive a full refund. Between 24–48h, 50% refund. Less than 24h, no refund. In case of emergency or health issues, I review with flexibility. Note: third‑party tickets follow their own policies.",
+    "display_order": 4,
+    "is_active": 1,
+    "created_at": "2025-10-05 13:28:19",
+    "updated_at": "2025-10-05 13:28:19"
+  },
+  {
+    "id": 5,
+    "question_pt": "Posso personalizar completamente meu tour?",
+    "question_en": "Can I fully customise my tour?",
+    "answer_pt": "Com certeza! Essa é a nossa especialidade. Conte seus interesses (história, gastronomia, arquitetura, fotografia, compras…) e eu crio um roteiro único com base no que você ama.",
+    "answer_en": "Absolutely! That’s our specialty. Tell me your interests (history, food, architecture, photography, shopping…) and I’ll build a unique itinerary based on what you love.",
+    "display_order": 5,
+    "is_active": 1,
+    "created_at": "2025-10-05 13:28:19",
+    "updated_at": "2025-10-05 13:28:19"
+  },
+  {
+    "id": 6,
+    "question_pt": "Os tours são adequados para crianças?",
+    "question_en": "Are the tours suitable for children?",
+    "answer_pt": "Sim! Adapto o ritmo e o conteúdo para famílias com crianças. Podemos incluir parques, museus interativos e paradas para lanches — a ideia é que todos se divirtam e aprendam juntos.",
+    "answer_en": "Yes! I adapt the pace and content for families with children. We can include parks, interactive museums and snack breaks — the idea is for everyone to have fun and learn together.",
+    "display_order": 6,
+    "is_active": 1,
+    "created_at": "2025-10-05 13:28:19",
+    "updated_at": "2025-10-05 13:28:19"
+  }
+]

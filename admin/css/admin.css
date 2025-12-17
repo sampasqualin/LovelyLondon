@@ -1,0 +1,727 @@
+/* =========================================================================
+   LOVELY LONDON ADMIN - ESTILOS
+   ========================================================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+    color: #333;
+    line-height: 1.6;
+    min-height: 100vh;
+}
+
+/* =========================================================================
+   CONTAINER & LAYOUT
+   ========================================================================= */
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+/* =========================================================================
+   NAVBAR
+   ========================================================================= */
+
+.navbar {
+    background: linear-gradient(135deg, #700420 0%, #292828 100%);
+    color: white;
+    padding: 1rem 0;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.navbar-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar-brand {
+    font-size: 24px;
+    font-weight: 700;
+    text-decoration: none;
+    color: white;
+}
+
+.navbar-menu {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+}
+
+.navbar-menu a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    transition: opacity 0.3s;
+}
+
+.navbar-menu a:hover {
+    opacity: 0.8;
+}
+
+.navbar-logout {
+    background: rgba(255, 255, 255, 0.2);
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    transition: background 0.3s;
+}
+
+.navbar-logout:hover {
+    background: rgba(255, 255, 255, 0.3);
+}
+
+/* =========================================================================
+   HEADER
+   ========================================================================= */
+
+.header {
+    background: white;
+    padding: 2rem;
+    border-radius: 8px;
+    margin-bottom: 2rem;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header h1 {
+    font-size: 28px;
+    color: #333;
+}
+
+.header-links {
+    display: flex;
+    gap: 1rem;
+}
+
+/* =========================================================================
+   ALERTS
+   ========================================================================= */
+
+.alert {
+    padding: 1rem 1.5rem;
+    border-radius: 4px;
+    margin-bottom: 1.5rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    animation: slideIn 0.3s ease;
+}
+
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.alert-success {
+    background: #d4edda;
+    color: #155724;
+    border: 1px solid #c3e6cb;
+}
+
+.alert-error {
+    background: #f8d7da;
+    color: #721c24;
+    border: 1px solid #f5c6cb;
+}
+
+.alert-info {
+    background: #d1ecf1;
+    color: #0c5460;
+    border: 1px solid #bee5eb;
+}
+
+.alert-warning {
+    background: #fff3cd;
+    color: #856404;
+    border: 1px solid #ffeaa7;
+}
+
+/* =========================================================================
+   MODULES GRID
+   ========================================================================= */
+
+.modules-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 1.5rem;
+    margin-top: 2rem;
+}
+
+.module-card {
+    background: white;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    text-decoration: none;
+    color: #333;
+    transition: transform 0.3s, box-shadow 0.3s;
+    cursor: pointer;
+}
+
+.module-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+.module-card-icon {
+    font-size: 48px;
+    margin-bottom: 1rem;
+}
+
+.module-card-name {
+    font-size: 18px;
+    font-weight: 600;
+    color: #333;
+}
+
+/* =========================================================================
+   TABLES
+   ========================================================================= */
+
+.table-responsive {
+    overflow-x: auto;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 14px;
+}
+
+thead {
+    background: #f5f5f5;
+    font-weight: 600;
+}
+
+th {
+    padding: 1rem;
+    text-align: left;
+    color: #333;
+    border-bottom: 2px solid #ddd;
+}
+
+td {
+    padding: 1rem;
+    border-bottom: 1px solid #eee;
+}
+
+tbody tr {
+    transition: background 0.2s;
+}
+
+tbody tr:hover {
+    background: #f9f9f9;
+}
+
+tbody tr:last-child td {
+    border-bottom: none;
+}
+
+/* =========================================================================
+   FORMS
+   ========================================================================= */
+
+.form {
+    background: white;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.form-section {
+    margin-bottom: 2rem;
+    padding-bottom: 2rem;
+    border-bottom: 1px solid #eee;
+}
+
+.form-section:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+}
+
+.form-section h3 {
+    margin-bottom: 1.5rem;
+    color: #333;
+    font-size: 18px;
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+    color: #555;
+    font-size: 14px;
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group input[type="password"],
+.form-group input[type="number"],
+.form-group input[type="date"],
+.form-group input[type="datetime-local"],
+.form-group input[type="file"],
+.form-group textarea,
+.form-group select {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 14px;
+    font-family: inherit;
+    transition: border-color 0.3s;
+}
+
+.form-group input:focus,
+.form-group textarea:focus,
+.form-group select:focus {
+    outline: none;
+    border-color: #700420;
+    box-shadow: 0 0 0 3px rgba(112, 4, 32, 0.1);
+}
+
+.form-group textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+.form-group.checkbox {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+}
+
+.form-group.checkbox input[type="checkbox"] {
+    width: auto;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+
+.form-group.checkbox label {
+    margin-bottom: 0;
+    cursor: pointer;
+}
+
+.form-row {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1rem;
+}
+
+.form-actions {
+    display: flex;
+    gap: 1rem;
+    justify-content: flex-end;
+    margin-top: 2rem;
+    padding-top: 2rem;
+    border-top: 1px solid #eee;
+}
+
+/* =========================================================================
+   BUTTONS
+   ========================================================================= */
+
+.btn {
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 14px;
+    text-decoration: none;
+    display: inline-block;
+    transition: all 0.3s;
+    white-space: nowrap;
+}
+
+.btn:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+.btn-primary {
+    background: #700420;
+    color: white;
+}
+
+.btn-primary:hover:not(:disabled) {
+    background: #5a0319;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(112, 4, 32, 0.3);
+}
+
+.btn-secondary {
+    background: #999;
+    color: white;
+}
+
+.btn-secondary:hover:not(:disabled) {
+    background: #777;
+    transform: translateY(-2px);
+}
+
+.btn-success {
+    background: #28a745;
+    color: white;
+}
+
+.btn-success:hover:not(:disabled) {
+    background: #218838;
+}
+
+.btn-info {
+    background: #17a2b8;
+    color: white;
+}
+
+.btn-info:hover:not(:disabled) {
+    background: #138496;
+}
+
+.btn-warning {
+    background: #ffc107;
+    color: #333;
+}
+
+.btn-warning:hover:not(:disabled) {
+    background: #e0a800;
+}
+
+.btn-danger {
+    background: #dc3545;
+    color: white;
+}
+
+.btn-danger:hover:not(:disabled) {
+    background: #c82333;
+}
+
+.btn-sm {
+    padding: 0.5rem 1rem;
+    font-size: 12px;
+}
+
+.btn-lg {
+    padding: 1rem 2rem;
+    font-size: 16px;
+}
+
+.btn-block {
+    width: 100%;
+    display: block;
+}
+
+/* =========================================================================
+   BADGES
+   ========================================================================= */
+
+.badge {
+    display: inline-block;
+    padding: 0.25rem 0.75rem;
+    border-radius: 12px;
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.badge-success {
+    background: #d4edda;
+    color: #155724;
+}
+
+.badge-danger {
+    background: #f8d7da;
+    color: #721c24;
+}
+
+.badge-warning {
+    background: #fff3cd;
+    color: #856404;
+}
+
+.badge-info {
+    background: #d1ecf1;
+    color: #0c5460;
+}
+
+.badge-secondary {
+    background: #e2e3e5;
+    color: #383d41;
+}
+
+/* =========================================================================
+   IMAGE UPLOAD
+   ========================================================================= */
+
+.image-preview {
+    margin-bottom: 1rem;
+    padding: 1rem;
+    background: #f5f5f5;
+    border-radius: 4px;
+    text-align: center;
+}
+
+.image-preview img {
+    max-width: 100%;
+    max-height: 300px;
+    border-radius: 4px;
+    margin-bottom: 1rem;
+}
+
+.upload-input {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    border: 2px dashed #700420;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.upload-input:hover {
+    background: #f5f5f5;
+}
+
+.upload-input input[type="file"] {
+    display: none;
+}
+
+/* =========================================================================
+   FOOTER
+   ========================================================================= */
+
+footer {
+    background: #292828;
+    color: #999;
+    padding: 2rem;
+    text-align: center;
+    margin-top: 3rem;
+    border-top: 1px solid #555;
+}
+
+footer a {
+    color: #ccc;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: white;
+}
+
+/* =========================================================================
+   UTILITY CLASSES
+   ========================================================================= */
+
+.text-center {
+    text-align: center;
+}
+
+.text-right {
+    text-align: right;
+}
+
+.text-muted {
+    color: #999;
+}
+
+.mt-0 { margin-top: 0; }
+.mt-1 { margin-top: 0.5rem; }
+.mt-2 { margin-top: 1rem; }
+.mt-3 { margin-top: 1.5rem; }
+.mt-4 { margin-top: 2rem; }
+
+.mb-0 { margin-bottom: 0; }
+.mb-1 { margin-bottom: 0.5rem; }
+.mb-2 { margin-bottom: 1rem; }
+.mb-3 { margin-bottom: 1.5rem; }
+.mb-4 { margin-bottom: 2rem; }
+
+.p-1 { padding: 0.5rem; }
+.p-2 { padding: 1rem; }
+.p-3 { padding: 1.5rem; }
+
+.d-flex {
+    display: flex;
+}
+
+.gap-1 { gap: 0.5rem; }
+.gap-2 { gap: 1rem; }
+.gap-3 { gap: 1.5rem; }
+
+/* =========================================================================
+   RESPONSIVE
+   ========================================================================= */
+
+@media (max-width: 768px) {
+    .container {
+        padding: 1rem;
+    }
+
+    .header {
+        flex-direction: column;
+        text-align: center;
+        gap: 1rem;
+    }
+
+    .modules-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .form-row {
+        grid-template-columns: 1fr;
+    }
+
+    .form-actions {
+        flex-direction: column-reverse;
+    }
+
+    .navbar-content {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .navbar-menu {
+        flex-direction: column;
+        gap: 1rem;
+        width: 100%;
+    }
+
+    .form-section {
+        padding-bottom: 1rem;
+    }
+
+    table {
+        font-size: 12px;
+    }
+
+    th, td {
+        padding: 0.75rem 0.5rem;
+    }
+}
+
+/* =========================================================================
+   ANIMATIONS
+   ========================================================================= */
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideDown {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.fade-in {
+    animation: fadeIn 0.3s ease;
+}
+
+.slide-down {
+    animation: slideDown 0.3s ease;
+}
+
+/* =========================================================================
+   ABOUT MODULE STYLES
+   ========================================================================= */
+
+.about-sections-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+    margin-top: 2rem;
+}
+
+.about-section-card {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.about-section-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+.about-section-header h3 {
+    margin: 0;
+    color: #333;
+    font-size: 1.2rem;
+}
+
+.about-section-subtitle {
+    margin: 0;
+    color: #999;
+    font-size: 0.9rem;
+}
+
+.about-section-preview {
+    flex: 1;
+    background: #f5f5f5;
+    padding: 1rem;
+    border-radius: 4px;
+    border-left: 4px solid #700420;
+}
+
+.about-section-preview strong {
+    display: block;
+    margin-bottom: 0.5rem;
+    color: #700420;
+}
+
+.about-section-preview p {
+    margin: 0;
+    color: #666;
+    font-size: 0.9rem;
+    line-height: 1.5;
+}

@@ -1,0 +1,14 @@
+# DISABLED FOR TESTING
+# <IfModule mod_rewrite.c>
+#     RewriteEngine On
+#     RewriteBase /
+#     
+#     # Don't rewrite if file or directory exists
+#     RewriteCond %{REQUEST_FILENAME} -f [OR]
+#     RewriteCond %{REQUEST_FILENAME} -d
+#     RewriteRule ^ - [L]
+#     
+#     # Blog routes (only if not a file/dir)
+#     RewriteRule ^v2/blog/?$ v2/pages/blog.php [L,QSA]
+#     RewriteRule ^v2/blog/([a-zA-Z0-9\-]+)/?$ v2/pages/blog-post.php?slug=$1 [L,QSA]
+# </IfModule>

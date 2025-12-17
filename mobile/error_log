@@ -1,0 +1,70 @@
+[13-Nov-2025 18:51:35 America/Fortaleza] PHP Warning:  require_once(/home2/lovely69/public_html/v2/mobile/includes/includes/lang.php): Failed to open stream: No such file or directory in /home2/lovely69/public_html/v2/mobile/includes/bootstrap.php on line 10
+[13-Nov-2025 18:51:35 America/Fortaleza] PHP Fatal error:  Uncaught Error: Failed opening required '/home2/lovely69/public_html/v2/mobile/includes/includes/lang.php' (include_path='.:/opt/cpanel/ea-php83/root/usr/share/pear') in /home2/lovely69/public_html/v2/mobile/includes/bootstrap.php:10
+Stack trace:
+#0 /home2/lovely69/public_html/v2/mobile/index.php(5): require_once()
+#1 {main}
+  thrown in /home2/lovely69/public_html/v2/mobile/includes/bootstrap.php on line 10
+[13-Nov-2025 18:51:51 America/Fortaleza] PHP Warning:  require_once(/home2/lovely69/public_html/v2/mobile/includes/includes/lang.php): Failed to open stream: No such file or directory in /home2/lovely69/public_html/v2/mobile/includes/bootstrap.php on line 10
+[13-Nov-2025 18:51:51 America/Fortaleza] PHP Fatal error:  Uncaught Error: Failed opening required '/home2/lovely69/public_html/v2/mobile/includes/includes/lang.php' (include_path='.:/opt/cpanel/ea-php83/root/usr/share/pear') in /home2/lovely69/public_html/v2/mobile/includes/bootstrap.php:10
+Stack trace:
+#0 /home2/lovely69/public_html/v2/mobile/index.php(5): require_once()
+#1 {main}
+  thrown in /home2/lovely69/public_html/v2/mobile/includes/bootstrap.php on line 10
+[13-Nov-2025 18:51:54 America/Fortaleza] PHP Warning:  require_once(/home2/lovely69/public_html/v2/mobile/includes/includes/lang.php): Failed to open stream: No such file or directory in /home2/lovely69/public_html/v2/mobile/includes/bootstrap.php on line 10
+[13-Nov-2025 18:51:54 America/Fortaleza] PHP Fatal error:  Uncaught Error: Failed opening required '/home2/lovely69/public_html/v2/mobile/includes/includes/lang.php' (include_path='.:/opt/cpanel/ea-php83/root/usr/share/pear') in /home2/lovely69/public_html/v2/mobile/includes/bootstrap.php:10
+Stack trace:
+#0 /home2/lovely69/public_html/v2/mobile/index.php(5): require_once()
+#1 {main}
+  thrown in /home2/lovely69/public_html/v2/mobile/includes/bootstrap.php on line 10
+[13-Nov-2025 18:51:57 America/Fortaleza] PHP Warning:  require_once(/home2/lovely69/public_html/v2/mobile/includes/includes/lang.php): Failed to open stream: No such file or directory in /home2/lovely69/public_html/v2/mobile/includes/bootstrap.php on line 10
+[13-Nov-2025 18:51:57 America/Fortaleza] PHP Fatal error:  Uncaught Error: Failed opening required '/home2/lovely69/public_html/v2/mobile/includes/includes/lang.php' (include_path='.:/opt/cpanel/ea-php83/root/usr/share/pear') in /home2/lovely69/public_html/v2/mobile/includes/bootstrap.php:10
+Stack trace:
+#0 /home2/lovely69/public_html/v2/mobile/index.php(5): require_once()
+#1 {main}
+  thrown in /home2/lovely69/public_html/v2/mobile/includes/bootstrap.php on line 10
+[13-Nov-2025 19:00:19 America/Fortaleza] PHP Warning:  require_once(/home2/lovely69/public_html/v2/mobile/includes/includes/lang.php): Failed to open stream: No such file or directory in /home2/lovely69/public_html/v2/mobile/includes/bootstrap.php on line 10
+[13-Nov-2025 19:00:19 America/Fortaleza] PHP Fatal error:  Uncaught Error: Failed opening required '/home2/lovely69/public_html/v2/mobile/includes/includes/lang.php' (include_path='.:/opt/cpanel/ea-php83/root/usr/share/pear') in /home2/lovely69/public_html/v2/mobile/includes/bootstrap.php:10
+Stack trace:
+#0 /home2/lovely69/public_html/v2/mobile/index.php(5): require_once()
+#1 {main}
+  thrown in /home2/lovely69/public_html/v2/mobile/includes/bootstrap.php on line 10
+[13-Nov-2025 19:00:25 America/Fortaleza] PHP Warning:  require_once(/home2/lovely69/public_html/v2/mobile/includes/includes/lang.php): Failed to open stream: No such file or directory in /home2/lovely69/public_html/v2/mobile/includes/bootstrap.php on line 10
+[13-Nov-2025 19:00:25 America/Fortaleza] PHP Fatal error:  Uncaught Error: Failed opening required '/home2/lovely69/public_html/v2/mobile/includes/includes/lang.php' (include_path='.:/opt/cpanel/ea-php83/root/usr/share/pear') in /home2/lovely69/public_html/v2/mobile/includes/bootstrap.php:10
+Stack trace:
+#0 /home2/lovely69/public_html/v2/mobile/index.php(5): require_once()
+#1 {main}
+  thrown in /home2/lovely69/public_html/v2/mobile/includes/bootstrap.php on line 10
+[13-Nov-2025 19:05:08 America/Fortaleza] PHP Warning:  require_once(/home2/lovely69/public_html/v2/mobile/includes/includes/lang.php): Failed to open stream: No such file or directory in /home2/lovely69/public_html/v2/mobile/includes/bootstrap.php on line 10
+[13-Nov-2025 19:05:08 America/Fortaleza] PHP Fatal error:  Uncaught Error: Failed opening required '/home2/lovely69/public_html/v2/mobile/includes/includes/lang.php' (include_path='.:/opt/cpanel/ea-php83/root/usr/share/pear') in /home2/lovely69/public_html/v2/mobile/includes/bootstrap.php:10
+Stack trace:
+#0 /home2/lovely69/public_html/v2/mobile/index.php(5): require_once()
+#1 {main}
+  thrown in /home2/lovely69/public_html/v2/mobile/includes/bootstrap.php on line 10
+[13-Nov-2025 19:05:11 America/Fortaleza] PHP Warning:  require_once(/home2/lovely69/public_html/v2/mobile/includes/includes/lang.php): Failed to open stream: No such file or directory in /home2/lovely69/public_html/v2/mobile/includes/bootstrap.php on line 10
+[13-Nov-2025 19:05:11 America/Fortaleza] PHP Fatal error:  Uncaught Error: Failed opening required '/home2/lovely69/public_html/v2/mobile/includes/includes/lang.php' (include_path='.:/opt/cpanel/ea-php83/root/usr/share/pear') in /home2/lovely69/public_html/v2/mobile/includes/bootstrap.php:10
+Stack trace:
+#0 /home2/lovely69/public_html/v2/mobile/index.php(5): require_once()
+#1 {main}
+  thrown in /home2/lovely69/public_html/v2/mobile/includes/bootstrap.php on line 10
+[13-Nov-2025 19:05:15 America/Fortaleza] PHP Warning:  require_once(/home2/lovely69/public_html/v2/mobile/includes/includes/lang.php): Failed to open stream: No such file or directory in /home2/lovely69/public_html/v2/mobile/includes/bootstrap.php on line 10
+[13-Nov-2025 19:05:15 America/Fortaleza] PHP Fatal error:  Uncaught Error: Failed opening required '/home2/lovely69/public_html/v2/mobile/includes/includes/lang.php' (include_path='.:/opt/cpanel/ea-php83/root/usr/share/pear') in /home2/lovely69/public_html/v2/mobile/includes/bootstrap.php:10
+Stack trace:
+#0 /home2/lovely69/public_html/v2/mobile/index.php(5): require_once()
+#1 {main}
+  thrown in /home2/lovely69/public_html/v2/mobile/includes/bootstrap.php on line 10
+[13-Nov-2025 19:05:30 America/Fortaleza] PHP Warning:  require_once(/home2/lovely69/public_html/v2/mobile/includes/includes/lang.php): Failed to open stream: No such file or directory in /home2/lovely69/public_html/v2/mobile/includes/bootstrap.php on line 10
+[13-Nov-2025 19:05:30 America/Fortaleza] PHP Fatal error:  Uncaught Error: Failed opening required '/home2/lovely69/public_html/v2/mobile/includes/includes/lang.php' (include_path='.:/opt/cpanel/ea-php83/root/usr/share/pear') in /home2/lovely69/public_html/v2/mobile/includes/bootstrap.php:10
+Stack trace:
+#0 /home2/lovely69/public_html/v2/mobile/index.php(5): require_once()
+#1 {main}
+  thrown in /home2/lovely69/public_html/v2/mobile/includes/bootstrap.php on line 10
+[13-Nov-2025 20:31:56 America/Fortaleza] PHP Fatal error:  Uncaught Error: Call to undefined function getCustomLogo() in /home2/lovely69/public_html/v2/mobile/includes/header.php:9
+Stack trace:
+#0 /home2/lovely69/public_html/v2/mobile/index.php(15): include()
+#1 {main}
+  thrown in /home2/lovely69/public_html/v2/mobile/includes/header.php on line 9
+[13-Nov-2025 22:01:27 America/Fortaleza] PHP Fatal error:  Uncaught Error: Call to undefined function getCustomLogo() in /home2/lovely69/public_html/v2/mobile/includes/header.php:9
+Stack trace:
+#0 /home2/lovely69/public_html/v2/mobile/index.php(15): include()
+#1 {main}
+  thrown in /home2/lovely69/public_html/v2/mobile/includes/header.php on line 9

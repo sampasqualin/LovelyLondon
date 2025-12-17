@@ -1,0 +1,15 @@
+# Robots.txt for Lovely London by Carol
+# https://lovelylondonbycarol.com
+
+User-agent: *
+Allow: /
+
+# Disallow admin and private directories (if any in future)
+Disallow: /includes/
+Disallow: /database/
+
+# Sitemap location
+Sitemap: https://lovelylondonbycarol.com/v2/sitemap.xml
+
+# Crawl-delay (optional, for polite crawling)
+Crawl-delay: 1

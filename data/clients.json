@@ -1,0 +1,68 @@
+[
+    {
+        "id": 1,
+        "name": "Clubcasa",
+        "logo_url": "\/assets\/images\/clients\/clubcasa.png",
+        "website_url": null,
+        "display_order": 1,
+        "is_active": 1
+    },
+    {
+        "id": 2,
+        "name": "Diageo",
+        "logo_url": "\/assets\/images\/clients\/diageo.jpg",
+        "website_url": null,
+        "display_order": 2,
+        "is_active": 1
+    },
+    {
+        "id": 3,
+        "name": "Ipiranga",
+        "logo_url": "\/assets\/images\/clients\/ipiranga.svg",
+        "website_url": null,
+        "display_order": 3,
+        "is_active": 1
+    },
+    {
+        "id": 4,
+        "name": "Natura",
+        "logo_url": "\/assets\/images\/clients\/natura.png",
+        "website_url": null,
+        "display_order": 4,
+        "is_active": 1
+    },
+    {
+        "id": 5,
+        "name": "Seara",
+        "logo_url": "\/assets\/images\/clients\/seara.png",
+        "website_url": null,
+        "display_order": 5,
+        "is_active": 1
+    },
+    {
+        "id": 6,
+        "name": "WHG",
+        "logo_url": "\/assets\/images\/clients\/whg.jpg",
+        "website_url": null,
+        "display_order": 6,
+        "is_active": 1
+    },
+    {
+        "name": "XP",
+        "display_order": "7",
+        "is_active": "1",
+        "logo_url": "\/assets\/uploads\/clients\/img_6915cdfb7dbb0_1763036667.png",
+        "id": "1763036667_6915cdfb7dd1d",
+        "created_at": "2025-11-13 09:24:27",
+        "updated_at": "2025-11-13 09:24:27"
+    },
+    {
+        "name": "amwins",
+        "display_order": "8",
+        "is_active": "1",
+        "logo_url": "\/assets\/uploads\/clients\/img_691a0b151ed21_1763314453.jpg",
+        "id": "1763314453_691a0b151ee3f",
+        "created_at": "2025-11-16 14:34:13",
+        "updated_at": "2025-11-16 14:34:13"
+    }
+]

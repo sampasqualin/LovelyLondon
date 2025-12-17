@@ -1,0 +1,148 @@
+[
+    {
+        "id": 1,
+        "setting_key": "site_title",
+        "setting_value": "Lovely London by Carol",
+        "setting_type": "text",
+        "description_pt": "Título do site",
+        "description_en": "Site title",
+        "created_at": "2025-09-29 15:40:22",
+        "updated_at": "2025-11-17 13:44:09"
+    },
+    {
+        "id": 2,
+        "setting_key": "site_description",
+        "setting_value": "Tours personalizados e experiências únicas em Londres",
+        "setting_type": "textarea",
+        "description_pt": "Descrição do site",
+        "description_en": "Site description",
+        "created_at": "2025-09-29 15:40:22",
+        "updated_at": "2025-11-17 13:44:09"
+    },
+    {
+        "id": 3,
+        "setting_key": "contact_email",
+        "setting_value": "hello@lovelylondon.uk",
+        "setting_type": "text",
+        "description_pt": "Email de contato",
+        "description_en": "Contact email",
+        "created_at": "2025-09-29 15:40:22",
+        "updated_at": "2025-11-17 13:44:09"
+    },
+    {
+        "id": 4,
+        "setting_key": "contact_phone",
+        "setting_value": "+44 7950 400919",
+        "setting_type": "text",
+        "description_pt": "Telefone de contato",
+        "description_en": "Contact phone",
+        "created_at": "2025-09-29 15:40:22",
+        "updated_at": "2025-11-17 13:44:09"
+    },
+    {
+        "id": 5,
+        "setting_key": "whatsapp_number",
+        "setting_value": "447950400919",
+        "setting_type": "text",
+        "description_pt": "Número do WhatsApp",
+        "description_en": "WhatsApp number",
+        "created_at": "2025-09-29 15:40:22",
+        "updated_at": "2025-11-17 13:44:09"
+    },
+    {
+        "id": 6,
+        "setting_key": "social_instagram",
+        "setting_value": "https:\/\/www.instagram.com\/lovelylondon_bycarol\/",
+        "setting_type": "text",
+        "description_pt": "Instagram handle",
+        "description_en": "Instagram handle",
+        "created_at": "2025-09-29 15:40:22",
+        "updated_at": "2025-11-17 13:44:09"
+    },
+    {
+        "id": 7,
+        "setting_key": "social_facebook",
+        "setting_value": "https:\/\/www.facebook.com\/carolina.carvalhopachi\/",
+        "setting_type": "text",
+        "description_pt": "Facebook page",
+        "description_en": "Facebook page",
+        "created_at": "2025-09-29 15:40:22",
+        "updated_at": "2025-11-17 13:44:09"
+    },
+    {
+        "id": 8,
+        "setting_key": "google_analytics",
+        "setting_value": "368501074",
+        "setting_type": "text",
+        "description_pt": "Google Analytics ID",
+        "description_en": "Google Analytics ID",
+        "created_at": "2025-09-29 15:40:22",
+        "updated_at": "2025-11-17 13:44:09"
+    },
+    {
+        "id": 9,
+        "setting_key": "booking_enabled",
+        "setting_value": "1",
+        "setting_type": "boolean",
+        "description_pt": "Reservas online habilitadas",
+        "description_en": "Online bookings enabled",
+        "created_at": "2025-09-29 15:40:22",
+        "updated_at": "2025-11-17 13:44:09"
+    },
+    {
+        "id": 10,
+        "setting_key": "whatsapp_message",
+        "setting_value": "Olá! Gostaria de saber mais sobre os tours em Londres",
+        "setting_type": "2025-11-17 10:34:34",
+        "created_at": "2025-11-17 10:34:34",
+        "updated_at": "2025-11-17 13:44:09"
+    },
+    {
+        "id": 11,
+        "setting_key": "social_x",
+        "setting_value": "",
+        "setting_type": "2025-11-17 10:34:34",
+        "created_at": "2025-11-17 10:34:34",
+        "updated_at": "2025-11-17 13:44:09"
+    },
+    {
+        "id": 12,
+        "setting_key": "social_tiktok",
+        "setting_value": "https:\/\/www.tiktok.com\/@lovelylondon_bycarol",
+        "setting_type": "2025-11-17 10:34:34",
+        "created_at": "2025-11-17 10:34:34",
+        "updated_at": "2025-11-17 13:44:09"
+    },
+    {
+        "id": 13,
+        "setting_key": "social_linkedin",
+        "setting_value": "",
+        "setting_type": "2025-11-17 10:34:34",
+        "created_at": "2025-11-17 10:34:34",
+        "updated_at": "2025-11-17 13:44:09"
+    },
+    {
+        "id": 14,
+        "setting_key": "social_youtube",
+        "setting_value": "https:\/\/www.youtube.com\/@LovelyLondonbyCarol",
+        "setting_type": "2025-11-17 10:34:34",
+        "created_at": "2025-11-17 10:34:34",
+        "updated_at": "2025-11-17 13:44:09"
+    },
+    {
+        "id": 15,
+        "setting_key": "social_spotify",
+        "setting_value": "",
+        "setting_type": "2025-11-17 10:34:34",
+        "created_at": "2025-11-17 10:34:34",
+        "updated_at": "2025-11-17 13:44:09"
+    },
+    {
+        "id": 16,
+        "setting_key": "social_pinterest",
+        "setting_value": "",
+        "setting_type": "2025-11-17 10:34:34",
+        "created_at": "2025-11-17 10:34:34",
+        "updated_at": "2025-11-17 13:44:09"
+    }
+]

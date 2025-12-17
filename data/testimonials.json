@@ -1,0 +1,47 @@
+[
+    {
+        "id": "1",
+        "client_name": "Maria Silva",
+        "client_location": "Brasil",
+        "tour_id": null,
+        "rating": "5",
+        "testimonial_pt": "Carol é incrível! O tour histórico foi muito além das minhas expectativas. Conhecimento profundo e paixão pela cidade são evidentes.",
+        "testimonial_en": "Carol is incredible! The historical tour exceeded my expectations. Deep knowledge and passion for the city are evident.",
+        "client_photo": "\/assets\/uploads\/testimonials\/img_691a46917c7da_1763329681.jpg",
+        "is_featured": "1",
+        "status": "approved",
+        "created_at": "2025-09-29 15:40:22",
+        "display_order": "0",
+        "updated_at": "2025-11-16 18:48:01"
+    },
+    {
+        "id": "2",
+        "client_name": "João Santos",
+        "client_location": "Brasil",
+        "tour_id": null,
+        "rating": "5",
+        "testimonial_pt": "O tour gastronômico foi uma experiência única. Provamos pratos que jamais encontraríamos sozinhos. Carol conhece Londres como ninguém!",
+        "testimonial_en": "The food tour was a unique experience. We tried dishes we would never find on our own. Carol knows London like no one else!",
+        "client_photo": "\/assets\/uploads\/testimonials\/img_691a470f0159e_1763329807.jpg",
+        "is_featured": "1",
+        "status": "approved",
+        "created_at": "2025-09-29 15:40:22",
+        "display_order": "0",
+        "updated_at": "2025-11-16 18:50:07"
+    },
+    {
+        "id": "3",
+        "client_name": "Ana Costa",
+        "client_location": "Brasil",
+        "tour_id": null,
+        "rating": "5",
+        "testimonial_pt": "As fotos ficaram incríveis! Carol me levou aos melhores pontos da cidade e ainda me ensinou técnicas profissionais. Recomendo muito!",
+        "testimonial_en": "The photos turned out amazing! Carol took me to the best spots in the city and taught me professional techniques. Highly recommend!",
+        "client_photo": "\/assets\/uploads\/testimonials\/img_691a4718f3f04_1763329816.jpg",
+        "is_featured": "1",
+        "status": "approved",
+        "created_at": "2025-09-29 15:40:22",
+        "display_order": "0",
+        "updated_at": "2025-11-16 18:50:17"
+    }
+]

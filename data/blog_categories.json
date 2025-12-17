@@ -1,0 +1,34 @@
+[
+    {
+        "id": 1,
+        "name_pt": "Dicas de Viagem",
+        "name_en": null,
+        "slug": "dicas-de-viagem",
+        "description_pt": "Conselhos práticos para aproveitar ao máximo sua estadia em Londres.",
+        "description_en": null
+    },
+    {
+        "id": 2,
+        "name_pt": "História & Cultura",
+        "name_en": null,
+        "slug": "historia-cultura",
+        "description_pt": "Mergulhe na rica história e cultura fascinante de Londres.",
+        "description_en": null
+    },
+    {
+        "id": 3,
+        "name_pt": "Gastronomia",
+        "name_en": null,
+        "slug": "gastronomia",
+        "description_pt": "Descubra os sabores únicos e a cena gastronômica londrina.",
+        "description_en": null
+    },
+    {
+        "id": 4,
+        "name_pt": "Guias Fotográficos",
+        "name_en": null,
+        "slug": "guias-fotograficos",
+        "description_pt": "Os melhores locais e dicas para fotografar em Londres.",
+        "description_en": null
+    }
+]

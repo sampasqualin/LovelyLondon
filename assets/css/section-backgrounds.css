@@ -1,0 +1,138 @@
+/**
+ * =========================================================================
+ * LOVELY LONDON - BACKGROUNDS DAS SEÇÕES (GERADO AUTOMATICAMENTE)
+ * =========================================================================
+ * Arquivo gerado automaticamente pelo admin.
+ * Não edite manualmente - suas alterações serão sobrescritas!
+ * Última atualização: 13/11/2025 12:11:11
+ * =========================================================================
+ */
+
+/* Seção: Cabeçalho (Header) */
+html body header.header.section-header,
+html body header.section-header#header-section,
+html body .header.section-header,
+html body .header.section-header .header-main,
+html body .header-main.bg-pattern {
+    background-image: url('/v2/assets/uploads/backgrounds/header-bg.webp') !important;
+    background-size: cover !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+    background-blend-mode: multiply !important;
+    background-color: #700420 !important;
+    color: #f8f9fa !important;
+}
+html body .header-main::before {
+    display: none !important;
+    content: none !important;
+}
+
+/* Seção: Seção Hero / Banner Principal */
+html body section.section.section-hero,
+html body section.section-hero#hero-section,
+html body .section.section-hero,
+html body #hero-section.section {
+    background-color: #f8f9fa !important;
+    color: #000000 !important;
+}
+
+/* Seção: Seção Tours */
+html body section.section.section-tours,
+html body section.section-tours#tours-section,
+html body .section.section-tours,
+html body #tours-section.section {
+    background-image: url('/v2/assets/uploads/backgrounds/tours-bg.webp') !important;
+    background-size: cover !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+    background-blend-mode: multiply !important;
+    background-color: #f8f9fa !important;
+    color: #000000 !important;
+}
+
+/* Seção: Seção Sobre / About */
+html body section.section.section-about,
+html body section.section-about#about-section,
+html body .section.section-about,
+html body #about-section.section {
+    background-color: #f8f9fa !important;
+    color: #000000 !important;
+}
+
+/* Seção: Seção Serviços */
+html body section.section.section-services,
+html body section.section-services#services-section,
+html body .section.section-services,
+html body #services-section.section {
+    background-color: #f8f9fa !important;
+    color: #000000 !important;
+}
+
+/* Seção: Seção Depoimentos */
+html body section.section.section-testimonials,
+html body section.section-testimonials#testimonials-section,
+html body .section.section-testimonials,
+html body #testimonials-section.section {
+    background-color: #f8f9fa !important;
+    color: #000000 !important;
+}
+
+/* Seção: Seção Galeria */
+html body section.section.section-gallery,
+html body section.section-gallery#gallery-section,
+html body .section.section-gallery,
+html body #gallery-section.section {
+    background-color: #f8f9fa !important;
+    color: #000000 !important;
+}
+
+/* Seção: Seção Blog */
+html body section.section.section-blog,
+html body section.section-blog#blog-section,
+html body .section.section-blog,
+html body #blog-section.section {
+    background-color: #f8f9fa !important;
+    color: #000000 !important;
+}
+
+/* Seção: Seção FAQ */
+html body section.section.section-faq,
+html body section.section-faq#faq-section,
+html body .section.section-faq,
+html body #faq-section.section {
+    background-color: #f8f9fa !important;
+    color: #000000 !important;
+}
+
+/* Seção: Seção Contato */
+html body section.section.section-contact,
+html body section.section-contact#contact-section,
+html body .section.section-contact,
+html body #contact-section.section {
+    background: linear-gradient(to bottom, #700420, #292828) !important;
+    color: #700420 !important;
+}
+
+/* Seção: Rodapé (Footer) */
+html body footer.footer.section-footer,
+html body footer.section-footer#footer-section,
+html body .footer.section-footer {
+    background-image: url('/v2/assets/uploads/backgrounds/footer-bg.webp') !important;
+    background-size: cover !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+    background-blend-mode: multiply !important;
+    background-color: #292828 !important;
+    color: #000000 !important;
+}
+
+/* Seção: Pronto para Contratar Nossos Serviços */
+html body section.section.section-services-cta,
+html body section.section-services-cta#services-cta-section,
+html body .section.section-services-cta,
+html body #services-cta-section.section,
+html body section.contact-section {
+    background-color: #700420 !important;
+    color: #f8f9fa !important;
+}
+

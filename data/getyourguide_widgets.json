@@ -1,0 +1,53 @@
+[
+    {
+        "widget_code": "<div data-gyg-href=\"https:\/\/widget.getyourguide.com\/default\/activities.frame\" data-gyg-locale-code=\"pt-BR\" data-gyg-widget=\"activities\" data-gyg-number-of-items=\"1\" data-gyg-partner-id=\"MJKDHZZ\" data-gyg-tour-ids=\"505308\"><span>Powered by <a target=\"_blank\" rel=\"sponsored\" href=\"https:\/\/www.getyourguide.com\/london-l57\/\">GetYourGuide<\/a><\/span><\/div>",
+        "title": "Tour do Harry Potter no Warner Bros. Studio com transporte",
+        "category": "tours",
+        "type": "ticket",
+        "category_pt": "Tour",
+        "category_en": "Tour",
+        "type_pt": "Ingresso",
+        "type_en": "Ticket",
+        "is_active": "1",
+        "widget_config": "{\"href\":\"https:\\\/\\\/widget.getyourguide.com\\\/default\\\/activities.frame\",\"locale\":\"pt-BR\",\"widget_type\":\"activities\",\"number_of_items\":\"1\",\"partner_id\":\"MJKDHZZ\",\"tour_ids\":\"505308\"}",
+        "tags": "[]",
+        "description": "Tour do Harry Potter no Warner Bros. Studio com transporte",
+        "id": "1763337110_691a6396468b9",
+        "created_at": "2025-11-16 20:51:50",
+        "updated_at": "2025-11-16 21:04:12"
+    },
+    {
+        "widget_code": "<div data-gyg-href=\"https:\/\/widget.getyourguide.com\/default\/activities.frame\" data-gyg-locale-code=\"pt-BR\" data-gyg-widget=\"activities\" data-gyg-number-of-items=\"1\" data-gyg-partner-id=\"MJKDHZZ\" data-gyg-tour-ids=\"847216\"><span>Powered by <a target=\"_blank\" rel=\"sponsored\" href=\"https:\/\/www.getyourguide.com\/london-l57\/\">GetYourGuide<\/a><\/span><\/div>",
+        "title": "Passeio pelas luzes de Natal num autocarro vintage",
+        "category": "tours",
+        "type": "bus",
+        "category_pt": "Passeio",
+        "category_en": "Tour",
+        "type_pt": "Passeio",
+        "type_en": "Tour",
+        "is_active": "1",
+        "widget_config": "{\"href\":\"https:\\\/\\\/widget.getyourguide.com\\\/default\\\/activities.frame\",\"locale\":\"pt-BR\",\"widget_type\":\"activities\",\"number_of_items\":\"1\",\"partner_id\":\"MJKDHZZ\",\"tour_ids\":\"847216\"}",
+        "tags": "[]",
+        "description": "Passeio pelas luzes de Natal num autocarro vintage",
+        "id": "1763337789_691a663d7381f",
+        "created_at": "2025-11-16 21:03:09",
+        "updated_at": "2025-11-16 21:06:34"
+    },
+    {
+        "widget_code": "<div data-gyg-href=\"https:\/\/widget.getyourguide.com\/default\/activities.frame\" data-gyg-locale-code=\"pt-BR\" data-gyg-widget=\"activities\" data-gyg-number-of-items=\"1\" data-gyg-partner-id=\"MJKDHZZ\" data-gyg-tour-ids=\"174429\"><span>Powered by <a target=\"_blank\" rel=\"sponsored\" href=\"https:\/\/www.getyourguide.com\/london-l57\/\">GetYourGuide<\/a><\/span><\/div>",
+        "title": "Madame Tussauds Londres",
+        "category": "attractions",
+        "type": "ticket",
+        "category_pt": "Atrações",
+        "category_en": "Atrações",
+        "type_pt": "Atrações",
+        "type_en": "Atrações",
+        "is_active": "1",
+        "widget_config": "{\"href\":\"https:\\\/\\\/widget.getyourguide.com\\\/default\\\/activities.frame\",\"locale\":\"pt-BR\",\"widget_type\":\"activities\",\"number_of_items\":\"1\",\"partner_id\":\"MJKDHZZ\",\"tour_ids\":\"174429\"}",
+        "tags": "[]",
+        "description": "Madame Tussauds Londres",
+        "id": "1763338106_691a677aec467",
+        "created_at": "2025-11-16 21:08:26",
+        "updated_at": "2025-11-16 21:08:26"
+    }
+]

@@ -1,0 +1,50 @@
+[
+    {
+        "id": 6,
+        "page_slug": "sobre",
+        "section_slug": "carol",
+        "content_pt": "<p>Sou Carol, uma <strong>guia turística brasileira certificada internacionalmente<\/strong>, apaixonada por compartilhar a magia de Londres com viajantes do mundo todo. Com anos de experiência e conhecimento profundo da cidade, criei a <strong>Lovely London<\/strong> para oferecer experiências autênticas e personalizadas que vão muito além dos roteiros tradicionais.<\/p><p>Minha abordagem única combina história fascinante, dicas insider e um toque de acolhimento brasileiro que torna cada tour memorável. Seja você visitando Londres pela primeira vez ou em busca de experiências mais profundas, estou aqui para criar momentos que ficarão para sempre em sua memória.<\/p>",
+        "content_en": "<p>I'm Carol, an <strong>internationally certified Brazilian tour guide<\/strong>, passionate about sharing the magic of London with travelers from around the world. With years of experience and deep knowledge of the city, I created <strong>Lovely London<\/strong> to offer authentic and personalized experiences that go far beyond traditional itineraries.<\/p><p>My unique approach combines fascinating history, insider tips and a touch of Brazilian warmth that makes each tour memorable. Whether you're visiting London for the first time or looking for deeper experiences, I'm here to create moments that will stay with you forever.<\/p>",
+        "updated_at": "2025-11-12 22:43:00"
+    },
+    {
+        "id": 7,
+        "page_slug": "sobre",
+        "section_slug": "lovely-london",
+        "content_pt": "<p>A <strong>Lovely London<\/strong> nasceu de uma paixão: transformar a forma como você vive Londres. Não oferecemos apenas tours - oferecemos <strong>experiências autênticas<\/strong> curadas com cuidado, atenção aos detalhes e um verdadeiro conhecimento local.<\/p><p>Cada roteiro é pensado para revelar a <strong>Londres real<\/strong>: os segredos que apenas um guia certificado conhece, as histórias que fazem a cidade respirar, os lugares que você nunca encontraria em um guia turístico comum. Combinamos o esplendor histórico com a vitalidade moderna, criando uma jornada única pela capital britânica.<\/p><p>Nossa missão é simples: fazer você <strong>amar Londres tanto quanto eu amo<\/strong>. E se não amar à primeira vez, com certeza amará quando regressar!<\/p>",
+        "content_en": "<p><strong>Lovely London<\/strong> was born from a passion: to transform the way you experience London. We don't just offer tours - we offer <strong>authentic experiences<\/strong> carefully curated with attention to detail and true local knowledge.<\/p><p>Each itinerary is designed to reveal the <strong>real London<\/strong>: the secrets that only a certified guide knows, the stories that make the city breathe, the places you would never find in a common tourist guide. We combine historical splendor with modern vitality, creating a unique journey through the British capital.<\/p><p>Our mission is simple: to make you <strong>love London as much as I do<\/strong>. And if you don't love it at first, you'll definitely love it when you come back!<\/p>",
+        "updated_at": "2025-11-12 22:43:00"
+    },
+    {
+        "id": 2,
+        "page_slug": "services",
+        "section_slug": "como-funciona-1",
+        "content_pt": "<h4>1. Consulta Inicial<\/h4><p>Entre em contato para discutir suas necessidades e preferências. A consulta inicial é gratuita.<\/p>",
+        "content_en": null,
+        "updated_at": "2025-10-05 13:28:19"
+    },
+    {
+        "id": 3,
+        "page_slug": "services",
+        "section_slug": "como-funciona-2",
+        "content_pt": "<h4>2. Proposta Personalizada<\/h4><p>Criamos uma proposta detalhada com serviços, itinerário e valores transparentes para sua aprovação.<\/p>",
+        "content_en": null,
+        "updated_at": "2025-10-05 13:28:19"
+    },
+    {
+        "id": 4,
+        "page_slug": "services",
+        "section_slug": "como-funciona-3",
+        "content_pt": "<h4>3. Confirmação & Pagamento<\/h4><p>Após a aprovação, confirmamos os serviços e processamos o pagamento de forma segura.<\/p>",
+        "content_en": null,
+        "updated_at": "2025-10-05 13:28:19"
+    },
+    {
+        "id": 5,
+        "page_slug": "services",
+        "section_slug": "como-funciona-4",
+        "content_pt": "<h4>4. Experiência Inesquecível<\/h4><p>Aproveitamos juntos sua viagem com serviços de qualidade premium e atenção aos detalhes.<\/p>",
+        "content_en": null,
+        "updated_at": "2025-10-05 13:28:19"
+    }
+]

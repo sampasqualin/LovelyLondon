@@ -1,0 +1,25 @@
+{
+    "about_carol": {
+        "title_pt": "Guia brasileira certificada em Londres",
+        "title_en": "Certified Brazilian Guide in London",
+        "subtitle_pt": "Olá e bem-vindo à minha Lovely London! Eu sou a Carol, uma guia turística brasileira em Londres, apaixonada por transformar a sua viagem numa experiência autêntica e memorável.",
+        "subtitle_en": "Hello and welcome to my Lovely London! I'm Carol, a Brazilian tour guide in London, passionate about transforming your trip into an authentic and memorable experience.",
+        "content_pt": "Como graduada do prestigiado Institute of Tourist Guiding, possuo uma certificação internacional que atesta o mais alto padrão de conhecimento. Meu objetivo é criar roteiros personalizados que se conectem com os seus sonhos, revelando os segredos e a magia que apenas um especialista local pode oferecer.",
+        "content_en": "As a graduate of the prestigious Institute of Tourist Guiding, I hold an international certification that attests to the highest standard of knowledge. My goal is to create personalized itineraries that connect with your dreams, revealing the secrets and magic that only a local expert can offer.",
+        "image": "\/assets\/images\/sobre\/carol-profile.png"
+    },
+    "about_lovely_london": {
+        "title_pt": "Sobre a Lovely London",
+        "title_en": "About Lovely London",
+        "subtitle_pt": "A Lovely London nasceu de um sonho: oferecer aos viajantes brasileiros uma experiência autêntica, pessoal e verdadeiramente memorável em uma das cidades mais fascinantes do mundo.",
+        "subtitle_en": "Lovely London was born from a dream: to offer Brazilian travelers an authentic, personal and truly memorable experience in one of the most fascinating cities in the world.",
+        "content_pt": "Acreditamos que viajar não é apenas visitar pontos turísticos, mas é conectar-se com a essência de um lugar através de histórias reais, encontros genuínos e momentos que transformam. Cada tour que oferecemos é criado com cuidado, atenção aos detalhes e uma paixão genuína por Londres.\n\nNossa missão é simples: revelar os segredos de Londres que apenas quem vive aqui conhece. Desde bairros escondidos até restaurantes autênticos, desde história medieval até arte contemporânea, nós planejamos cada detalhe para que sua viagem seja única.\n\nSeja você um viajante de primeira viagem ou um explorador experiente, a Lovely London está aqui para transformar seus sonhos em realidade.",
+        "content_en": "We believe that traveling is not just about visiting tourist attractions, but about connecting with the essence of a place through real stories, genuine encounters and transformative moments. Every tour we offer is created with care, attention to detail and a genuine passion for London.\n\nOur mission is simple: to reveal the secrets of London that only those who live here know. From hidden neighborhoods to authentic restaurants, from medieval history to contemporary art, we plan every detail so that your trip is unique.\n\nWhether you are a first-time traveler or an experienced explorer, Lovely London is here to transform your dreams into reality.",
+        "image": "\/assets\/images\/sobre\/galeria1.jpg"
+    },
+    "social_links": {
+        "instagram": "https:\/\/www.instagram.com\/lovelylondon_bycarol",
+        "facebook": "https:\/\/www.facebook.com\/carolina.carvalhopachi",
+        "tiktok": "https:\/\/www.tiktok.com\/@lovelylondon_bycarol"
+    }
+}

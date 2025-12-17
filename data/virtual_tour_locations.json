@@ -1,0 +1,50 @@
+[
+    {
+        "id": 1,
+        "location_name_pt": "Big Ben & Parlamento",
+        "location_name_en": null,
+        "description_pt": "Ícone mais famoso de Londres, construído em 1859",
+        "description_en": null,
+        "Maps_coords": "51.5007,-0.1246",
+        "related_tour_slug": "londres-classica",
+        "icon_svg": "<svg xmlns=\\\"http://www.w3.org/2000/svg\\\" width=\\\"32\\\" height=\\\"32\\\" viewBox=\\\"0 0 24 24\\\" fill=\\\"none\\\" stroke=\\\"currentColor\\\" stroke-width=\\\"1.5\\\"><path d=\\\"M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z\\\"></path><polyline points=\\\"9 22 9 12 15 12 15 22\\\"></polyline></svg>",
+        "display_order": 1,
+        "is_active": 1
+    },
+    {
+        "id": 2,
+        "location_name_pt": "Tower Bridge",
+        "location_name_en": null,
+        "description_pt": "Ponte icônica vitoriana sobre o Rio Tâmisa",
+        "description_en": null,
+        "Maps_coords": "51.5055,-0.0754",
+        "related_tour_slug": "londres-historica",
+        "icon_svg": "<svg xmlns=\\\"http://www.w3.org/2000/svg\\\" width=\\\"32\\\" height=\\\"32\\\" viewBox=\\\"0 0 24 24\\\" fill=\\\"none\\\" stroke=\\\"currentColor\\\" stroke-width=\\\"1.5\\\"><path d=\\\"M4 15s1-1 4-1 5 2 8 2 4-1 4-1V3s-1 1-4 1-5-2-8-2-4 1-4 1z\\\"></path><line x1=\\\"4\\\" y1=\\\"22\\\" x2=\\\"4\\\" y2=\\\"15\\\"></line></svg>",
+        "display_order": 2,
+        "is_active": 1
+    },
+    {
+        "id": 3,
+        "location_name_pt": "Buckingham Palace",
+        "location_name_en": null,
+        "description_pt": "Residência oficial da monarquia britânica",
+        "description_en": null,
+        "Maps_coords": "51.5014,-0.1419",
+        "related_tour_slug": "londres-classica",
+        "icon_svg": "<svg xmlns=\\\"http://www.w3.org/2000/svg\\\" width=\\\"32\\\" height=\\\"32\\\" viewBox=\\\"0 0 24 24\\\" fill=\\\"currentColor\\\"><path d=\\\"M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z\\\"/></svg>",
+        "display_order": 3,
+        "is_active": 1
+    },
+    {
+        "id": 4,
+        "location_name_pt": "Notting Hill",
+        "location_name_en": null,
+        "description_pt": "Bairro charmoso com casas coloridas",
+        "description_en": null,
+        "Maps_coords": "51.5158,-0.2058",
+        "related_tour_slug": "notting-hill",
+        "icon_svg": "<svg xmlns=\\\"http://www.w3.org/2000/svg\\\" width=\\\"32\\\" height=\\\"32\\\" viewBox=\\\"0 0 24 24\\\" fill=\\\"none\\\" stroke=\\\"currentColor\\\" stroke-width=\\\"1.5\\\"><path d=\\\"M12 19l7-7 3 3-7 7-3-3z\\\"></path><path d=\\\"M18 13l-1.5-7.5L2 2l3.5 14.5L13 18l5-5z\\\"></path><path d=\\\"M2 2l7.586 7.586\\\"></path><circle cx=\\\"11\\\" cy=\\\"11\\\" r=\\\"2\\\"></circle></svg>",
+        "display_order": 4,
+        "is_active": 1
+    }
+]

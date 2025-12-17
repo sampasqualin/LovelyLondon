@@ -1,0 +1,79 @@
+[
+  {
+    "id": 1,
+    "title_pt": "Roteiros Exclusivos",
+    "title_en": "Bespoke Itineraries",
+    "description_pt": "Itinerários sob medida para seus interesses, revelando uma Londres além do óbvio.",
+    "description_en": "Bespoke itineraries tailored to your interests, revealing a London beyond the obvious.",
+    "icon_svg": "<svg xmlns=\\\"http://www.w3.org/2000/svg\\\" width=\\\"48\\\" height=\\\"48\\\" viewBox=\\\"0 0 24 24\\\" fill=\\\"none\\\" stroke=\\\"currentColor\\\" stroke-width=\\\"1.5\\\"><path d=\\\"M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z\\\"></path><circle cx=\\\"12\\\" cy=\\\"10\\\" r=\\\"3\\\"></circle></svg>",
+    "page_context": "index",
+    "display_order": 1,
+    "is_active": 1
+  },
+  {
+    "id": 2,
+    "title_pt": "Curadoria Pessoal",
+    "title_en": "Personalised Curation",
+    "description_pt": "Cada detalhe — do restaurante ao passeio — é cuidadosamente selecionado para garantir uma experiência autêntica.",
+    "description_en": "Every detail — from restaurants to tours — is carefully selected to ensure an authentic experience.",
+    "icon_svg": "<svg xmlns=\\\"http://www.w3.org/2000/svg\\\" width=\\\"48\\\" height=\\\"48\\\" viewBox=\\\"0 0 24 24\\\" fill=\\\"none\\\" stroke=\\\"currentColor\\\" stroke-width=\\\"1.5\\\"><circle cx=\\\"11\\\" cy=\\\"11\\\" r=\\\"8\\\"></circle><line x1=\\\"21\\\" y1=\\\"21\\\" x2=\\\"16.65\\\" y2=\\\"16.65\\\"></line></svg>",
+    "page_context": "index",
+    "display_order": 2,
+    "is_active": 1
+  },
+  {
+    "id": 3,
+    "title_pt": "Londres Autêntica",
+    "title_en": "Authentic London",
+    "description_pt": "Viva a cidade como um local, com acesso a lugares, histórias e segredos que só uma guia certificada conhece.",
+    "description_en": "Experience the city like a local, with access to places, stories and secrets only a certified guide knows.",
+    "icon_svg": "<svg xmlns=\\\"http://www.w3.org/2000/svg\\\" width=\\\"48\\\" height=\\\"48\\\" viewBox=\\\"0 0 24 24\\\" fill=\\\"none\\\" stroke=\\\"currentColor\\\" stroke-width=\\\"1.5\\\"><path d=\\\"M2 21l3-3h11a2 2 0 0 0 2-2V5a2 2 0 0 0-2-2H8a2 2 0 0 0-2 2v14a1 1 0 0 1-1 1H2z\\\"></path><path d=\\\"M13 3v11\\\"></path></svg>",
+    "page_context": "index",
+    "display_order": 3,
+    "is_active": 1
+  },
+  {
+    "id": 4,
+    "title_pt": "Experiências Memoráveis",
+    "title_en": "Memorable Experiences",
+    "description_pt": "Mais que um tour: uma imersão cultural rica, confortável e segura, para criar memórias inesquecíveis.",
+    "description_en": "More than a tour: a rich, comfortable and safe cultural immersion to create unforgettable memories.",
+    "icon_svg": "<svg xmlns=\\\"http://www.w3.org/2000/svg\\\" width=\\\"48\\\" height=\\\"48\\\" viewBox=\\\"0 0 24 24\\\" fill=\\\"none\\\" stroke=\\\"currentColor\\\" stroke-width=\\\"1.5\\\"><path d=\\\"M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z\\\"></path></svg>",
+    "page_context": "index",
+    "display_order": 4,
+    "is_active": 1
+  },
+  {
+    "id": 5,
+    "title_pt": "Experiência Personalizada",
+    "title_en": "Personalised Experience",
+    "description_pt": "Cada tour é adaptado aos seus interesses e ritmo, garantindo uma experiência única e memorável.",
+    "description_en": "Each tour is adapted to your interests and pace, ensuring a unique, memorable experience.",
+    "icon_svg": null,
+    "page_context": "tours",
+    "display_order": 1,
+    "is_active": 1
+  },
+  {
+    "id": 6,
+    "title_pt": "Guias Especializados",
+    "title_en": "Expert Guides",
+    "description_pt": "Nossos guias são apaixonados por Londres e possuem conhecimento profundo sobre história e cultura.",
+    "description_en": "Our guides are passionate about London and have deep knowledge of its history and culture.",
+    "icon_svg": null,
+    "page_context": "tours",
+    "display_order": 2,
+    "is_active": 1
+  },
+  {
+    "id": 7,
+    "title_pt": "Transporte Incluído",
+    "title_en": "Seamless Transport",
+    "description_pt": "Transporte prático conforme o roteiro, com opções privadas quando aplicável.",
+    "description_en": "Practical transport according to the itinerary, with private options when applicable.",
+    "icon_svg": null,
+    "page_context": "tours",
+    "display_order": 3,
+    "is_active": 1
+  }
+]

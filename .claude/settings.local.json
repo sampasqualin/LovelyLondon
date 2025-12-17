@@ -1,0 +1,14 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(php -l:*)",
+      "Bash(php:*)",
+      "Bash(del tours.css services.css blog.css blog-post.css)",
+      "Bash(cat:*)",
+      "Bash(node --check:*)",
+      "Bash(del \"C:\\LOVELY_STG\\v2\\test_services.php\" \"C:\\LOVELY_STG\\v2\\test_render.php\")"
+    ],
+    "deny": [],
+    "ask": []
+  }
+}

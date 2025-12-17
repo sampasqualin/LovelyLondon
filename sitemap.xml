@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+
+    <!-- Homepage -->
+    <url>
+        <loc>https://lovelylondonbycarol.com/</loc>
+        <xhtml:link rel="alternate" hreflang="pt" href="https://lovelylondonbycarol.com/?lang=pt"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://lovelylondonbycarol.com/?lang=en"/>
+        <lastmod>2025-01-15</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>1.0</priority>
+    </url>
+
+    <!-- Sobre / About -->
+    <url>
+        <loc>https://lovelylondonbycarol.com/pages/sobre.php</loc>
+        <xhtml:link rel="alternate" hreflang="pt" href="https://lovelylondonbycarol.com/pages/sobre.php?lang=pt"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://lovelylondonbycarol.com/pages/sobre.php?lang=en"/>
+        <lastmod>2025-01-15</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+    </url>
+
+    <!-- Tours -->
+    <url>
+        <loc>https://lovelylondonbycarol.com/pages/tours.php</loc>
+        <xhtml:link rel="alternate" hreflang="pt" href="https://lovelylondonbycarol.com/pages/tours.php?lang=pt"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://lovelylondonbycarol.com/pages/tours.php?lang=en"/>
+        <lastmod>2025-01-15</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.9</priority>
+    </url>
+
+    <!-- Serviços / Services -->
+    <url>
+        <loc>https://lovelylondonbycarol.com/pages/services.php</loc>
+        <xhtml:link rel="alternate" hreflang="pt" href="https://lovelylondonbycarol.com/pages/services.php?lang=pt"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://lovelylondonbycarol.com/pages/services.php?lang=en"/>
+        <lastmod>2025-01-15</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+
+    <!-- Experience -->
+    <url>
+        <loc>https://lovelylondonbycarol.com/pages/experience.php</loc>
+        <xhtml:link rel="alternate" hreflang="pt" href="https://lovelylondonbycarol.com/pages/experience.php?lang=pt"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://lovelylondonbycarol.com/pages/experience.php?lang=en"/>
+        <lastmod>2025-01-15</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+
+    <!-- Tour Virtual 360 -->
+    <url>
+        <loc>https://lovelylondonbycarol.com/pages/360.php</loc>
+        <xhtml:link rel="alternate" hreflang="pt" href="https://lovelylondonbycarol.com/pages/360.php?lang=pt"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://lovelylondonbycarol.com/pages/360.php?lang=en"/>
+        <lastmod>2025-01-15</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+
+    <!-- Blog -->
+    <url>
+        <loc>https://lovelylondonbycarol.com/pages/blog.php</loc>
+        <xhtml:link rel="alternate" hreflang="pt" href="https://lovelylondonbycarol.com/pages/blog.php?lang=pt"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://lovelylondonbycarol.com/pages/blog.php?lang=en"/>
+        <lastmod>2025-01-15</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.7</priority>
+    </url>
+
+    <!-- Política de Privacidade / Privacy Policy -->
+    <url>
+        <loc>https://lovelylondonbycarol.com/pages/privacidade.php</loc>
+        <xhtml:link rel="alternate" hreflang="pt" href="https://lovelylondonbycarol.com/pages/privacidade.php?lang=pt"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://lovelylondonbycarol.com/pages/privacidade.php?lang=en"/>
+        <lastmod>2025-01-15</lastmod>
+        <changefreq>yearly</changefreq>
+        <priority>0.3</priority>
+    </url>
+
+    <!-- Termos de Serviço / Terms of Service -->
+    <url>
+        <loc>https://lovelylondonbycarol.com/pages/termos.php</loc>
+        <xhtml:link rel="alternate" hreflang="pt" href="https://lovelylondonbycarol.com/pages/termos.php?lang=pt"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://lovelylondonbycarol.com/pages/termos.php?lang=en"/>
+        <lastmod>2025-01-15</lastmod>
+        <changefreq>yearly</changefreq>
+        <priority>0.3</priority>
+    </url>
+
+    <!-- Blog Posts (adicionar posts dinamicamente conforme publicados) -->
+    <url>
+        <loc>https://lovelylondonbycarol.com/pages/blog-post.php?slug=10-segredos-londres</loc>
+        <lastmod>2025-01-15</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.6</priority>
+    </url>
+
+    <url>
+        <loc>https://lovelylondonbycarol.com/pages/blog-post.php?slug=orcamento-limitado-londres</loc>
+        <lastmod>2025-01-15</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.6</priority>
+    </url>
+
+    <url>
+        <loc>https://lovelylondonbycarol.com/pages/blog-post.php?slug=pubs-historicos-londres</loc>
+        <lastmod>2025-01-15</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.6</priority>
+    </url>
+
+</urlset>

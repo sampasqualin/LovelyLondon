@@ -1,0 +1,546 @@
+/**
+ * LOVELY LONDON - FORMULÁRIO INTERATIVO DE ORÇAMENTO
+ * Estilos para formulário multi-step estilo Google Forms
+ */
+
+/* =============================================================================
+   CONTAINER & LAYOUT
+   ============================================================================= */
+
+.interactive-form-section {
+    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+    position: relative;
+}
+
+.interactive-form-container {
+    max-width: 800px;
+    margin: 0 auto;
+    background: var(--white);
+    border-radius: var(--radius-xl);
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.15);
+    overflow: hidden;
+}
+
+/* =============================================================================
+   PROGRESS BAR
+   ============================================================================= */
+
+.form-progress {
+    height: 6px;
+    background: var(--light-gray);
+    position: relative;
+    overflow: hidden;
+}
+
+.form-progress-bar {
+    height: 100%;
+    background: var(--gradient-lovely);
+    transition: width 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+    width: 16.66%; /* 1/6 initially */
+}
+
+/* =============================================================================
+   FORM STEPS
+   ============================================================================= */
+
+.interactive-form {
+    padding: 0;
+}
+
+.form-step {
+    display: none;
+    animation: fadeInUp 0.5s ease-out;
+    min-height: 500px;
+}
+
+.form-step.active {
+    display: block;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* =============================================================================
+   STEP HEADER
+   ============================================================================= */
+
+.step-header {
+    padding: var(--spacing-2xl) var(--spacing-2xl) var(--spacing-lg);
+    text-align: center;
+    border-bottom: 2px solid var(--light-gray);
+}
+
+.step-number {
+    display: inline-block;
+    background: var(--gradient-lovely);
+    color: var(--white);
+    padding: 6px 16px;
+    border-radius: var(--radius-full);
+    font-size: 0.85rem;
+    font-weight: 700;
+    margin-bottom: var(--spacing-md);
+}
+
+.step-title {
+    font-size: clamp(1.75rem, 4vw, 2.25rem);
+    font-family: var(--font-display);
+    color: var(--blackfriars);
+    margin-bottom: var(--spacing-sm);
+    line-height: 1.2;
+}
+
+.step-subtitle {
+    font-size: 1.05rem;
+    color: var(--gray);
+    opacity: 0.9;
+}
+
+/* =============================================================================
+   STEP CONTENT
+   ============================================================================= */
+
+.step-content {
+    padding: var(--spacing-2xl);
+}
+
+/* =============================================================================
+   OPTION CARDS (Large Selection)
+   ============================================================================= */
+
+.option-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: var(--spacing-lg);
+}
+
+.option-card {
+    position: relative;
+    cursor: pointer;
+    display: block;
+}
+
+.option-card input[type="radio"] {
+    position: absolute;
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.option-card-content {
+    background: var(--fog-white);
+    border: 3px solid var(--light-gray);
+    border-radius: var(--radius-lg);
+    padding: var(--spacing-xl);
+    text-align: center;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    min-height: 220px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.option-card:hover .option-card-content {
+    border-color: var(--lovely);
+    transform: translateY(-4px);
+    box-shadow: 0 10px 30px rgba(112, 4, 32, 0.15);
+}
+
+.option-card.selected .option-card-content,
+.option-card input:checked + .option-card-content {
+    border-color: var(--lovely);
+    background: linear-gradient(135deg, rgba(112, 4, 32, 0.05) 0%, rgba(112, 4, 32, 0.1) 100%);
+    box-shadow: 0 0 0 4px rgba(112, 4, 32, 0.1);
+}
+
+.option-icon {
+    width: 72px;
+    height: 72px;
+    margin: 0 auto var(--spacing-md);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--lovely);
+    font-size: 3rem;
+}
+
+.option-icon svg {
+    width: 100%;
+    height: 100%;
+}
+
+.option-card h3 {
+    font-size: 1.35rem;
+    font-weight: 700;
+    color: var(--blackfriars);
+    margin-bottom: var(--spacing-sm);
+}
+
+.option-card p {
+    font-size: 0.95rem;
+    color: var(--gray);
+    line-height: 1.5;
+}
+
+/* =============================================================================
+   OPTION LIST (Compact Selection)
+   ============================================================================= */
+
+.option-list {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-sm);
+}
+
+.option-list-item {
+    position: relative;
+    cursor: pointer;
+    display: block;
+}
+
+.option-list-item input[type="radio"] {
+    position: absolute;
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.option-list-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: var(--spacing-md);
+    background: var(--fog-white);
+    border: 2px solid var(--light-gray);
+    border-radius: var(--radius-md);
+    padding: var(--spacing-md) var(--spacing-lg);
+    transition: all 0.3s ease;
+}
+
+.option-list-item:hover .option-list-content {
+    border-color: var(--lovely);
+    background: rgba(112, 4, 32, 0.03);
+}
+
+.option-list-item.selected .option-list-content,
+.option-list-item input:checked + span {
+    border-color: var(--lovely);
+    background: linear-gradient(135deg, rgba(112, 4, 32, 0.05) 0%, rgba(112, 4, 32, 0.08) 100%);
+    box-shadow: 0 0 0 3px rgba(112, 4, 32, 0.1);
+}
+
+.option-list-icon {
+    font-size: 1.5rem;
+    margin-right: var(--spacing-sm);
+}
+
+.option-list-text {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.option-list-text strong {
+    font-size: 1.05rem;
+    font-weight: 600;
+    color: var(--blackfriars);
+}
+
+.option-list-text small {
+    font-size: 0.85rem;
+    color: var(--gray);
+    opacity: 0.9;
+}
+
+.option-list-price {
+    font-size: 1.25rem;
+    font-weight: 800;
+    color: var(--lovely);
+    font-family: var(--font-display);
+}
+
+/* =============================================================================
+   FORM FIELDS
+   ============================================================================= */
+
+.form-fields {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: var(--spacing-lg);
+}
+
+.form-field {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-sm);
+}
+
+.form-field.full-width {
+    grid-column: 1 / -1;
+}
+
+.form-field label {
+    font-weight: 600;
+    color: var(--blackfriars);
+    font-size: 0.95rem;
+}
+
+.form-field input,
+.form-field select,
+.form-field textarea {
+    padding: 14px 18px;
+    border: 2px solid var(--light-gray);
+    border-radius: var(--radius-md);
+    font-size: 1rem;
+    font-family: var(--font-body);
+    transition: all var(--transition-base);
+    background: var(--white);
+    color: var(--blackfriars);
+}
+
+.form-field input:focus,
+.form-field select:focus,
+.form-field textarea:focus {
+    border-color: var(--lovely);
+    outline: none;
+    box-shadow: 0 0 0 4px rgba(112, 4, 32, 0.1);
+}
+
+.form-field textarea {
+    resize: vertical;
+    min-height: 120px;
+}
+
+/* =============================================================================
+   SUMMARY CARD
+   ============================================================================= */
+
+.summary-card {
+    background: linear-gradient(135deg, #f5f7fa 0%, #e8eef5 100%);
+    border: 2px solid var(--light-gray);
+    border-radius: var(--radius-lg);
+    padding: var(--spacing-xl);
+    margin-bottom: var(--spacing-xl);
+}
+
+.summary-card h3 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--blackfriars);
+    margin-bottom: var(--spacing-lg);
+    padding-bottom: var(--spacing-md);
+    border-bottom: 2px solid var(--light-gray);
+}
+
+.summary-items {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-md);
+}
+
+.summary-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: var(--spacing-sm) 0;
+    gap: var(--spacing-md);
+}
+
+.summary-item strong {
+    color: var(--gray);
+    font-weight: 600;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    min-width: 140px;
+}
+
+.summary-item span {
+    color: var(--blackfriars);
+    font-weight: 500;
+    text-align: right;
+    flex: 1;
+}
+
+.summary-item.full-width {
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.summary-item.full-width span {
+    text-align: left;
+    margin-top: var(--spacing-xs);
+    padding-left: var(--spacing-md);
+    border-left: 3px solid var(--lovely);
+}
+
+/* =============================================================================
+   CONSENT CHECKBOX
+   ============================================================================= */
+
+.form-consent {
+    margin-top: var(--spacing-lg);
+}
+
+.checkbox-label {
+    display: flex;
+    align-items: flex-start;
+    gap: var(--spacing-sm);
+    cursor: pointer;
+    user-select: none;
+}
+
+.checkbox-label input[type="checkbox"] {
+    margin-top: 4px;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    accent-color: var(--lovely);
+}
+
+.checkbox-label span {
+    font-size: 0.95rem;
+    color: var(--gray);
+    line-height: 1.5;
+}
+
+/* =============================================================================
+   NAVIGATION BUTTONS
+   ============================================================================= */
+
+.form-navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: var(--spacing-xl) var(--spacing-2xl);
+    background: var(--fog-white);
+    border-top: 2px solid var(--light-gray);
+    gap: var(--spacing-md);
+}
+
+.btn-nav {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-sm);
+    padding: 14px 28px;
+    border-radius: var(--radius-md);
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all var(--transition-base);
+    border: 2px solid transparent;
+    font-family: var(--font-body);
+}
+
+.btn-prev {
+    background: var(--white);
+    color: var(--blackfriars);
+    border-color: var(--light-gray);
+}
+
+.btn-prev:hover {
+    border-color: var(--lovely);
+    background: rgba(112, 4, 32, 0.05);
+    transform: translateX(-4px);
+}
+
+.btn-next,
+.btn-submit {
+    background: var(--gradient-lovely);
+    color: var(--white);
+    box-shadow: 0 4px 15px rgba(112, 4, 32, 0.3);
+    margin-left: auto;
+}
+
+.btn-next:hover,
+.btn-submit:hover:not(:disabled) {
+    box-shadow: 0 6px 20px rgba(112, 4, 32, 0.4);
+    transform: translateX(4px);
+}
+
+.btn-submit:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+/* =============================================================================
+   RESPONSIVE
+   ============================================================================= */
+
+@media (max-width: 768px) {
+    .interactive-form-container {
+        border-radius: 0;
+    }
+
+    .step-header {
+        padding: var(--spacing-xl) var(--spacing-lg) var(--spacing-md);
+    }
+
+    .step-content {
+        padding: var(--spacing-lg);
+    }
+
+    .option-cards {
+        grid-template-columns: 1fr;
+    }
+
+    .form-fields {
+        grid-template-columns: 1fr;
+    }
+
+    .form-navigation {
+        padding: var(--spacing-lg);
+        flex-wrap: wrap;
+    }
+
+    .btn-nav {
+        flex: 1;
+        min-width: 140px;
+        justify-content: center;
+    }
+
+    .summary-item {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .summary-item strong {
+        min-width: auto;
+    }
+
+    .summary-item span {
+        text-align: left;
+        margin-top: 4px;
+    }
+}
+
+@media (max-width: 480px) {
+    .step-title {
+        font-size: 1.5rem;
+    }
+
+    .option-card-content {
+        padding: var(--spacing-lg);
+        min-height: 180px;
+    }
+
+    .option-icon {
+        width: 56px;
+        height: 56px;
+        font-size: 2.5rem;
+    }
+
+    .btn-nav {
+        font-size: 0.95rem;
+        padding: 12px 20px;
+    }
+}

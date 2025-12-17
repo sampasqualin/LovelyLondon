@@ -1,0 +1,1085 @@
+/* =============================================================================
+   LOVELY LONDON BY CAROL - ENHANCEMENTS
+   Melhorias Visuais, UX e Acessibilidade Consolidadas
+   Consolidação de: visual-improvements.css + ux-accessibility-improvements.css
+   ============================================================================= */
+
+/* =============================================================================
+   VARIÁVEIS ADICIONAIS - MELHORIAS VISUAIS
+   ============================================================================= */
+
+:root {
+    /* Border Radius - Sóbrio e Elegante */
+    --radius-sm: 2px;
+    --radius-md: 4px;
+    --radius-lg: 8px;
+    --radius-xl: 12px;
+    --radius-2xl: 16px;
+
+    /* Cores Intermediárias */
+    --lovely-light: #8B0528;
+    --lovely-lighter: #A52A45;
+    --lovely-dark: #5A0319;
+    --lovely-subtle: rgba(112, 4, 32, 0.08);
+    --lovely-subtle-hover: rgba(112, 4, 32, 0.12);
+
+    --skyline-light: #E8CEBA;
+    --skyline-dark: #C19B7A;
+    --skyline-subtle: rgba(218, 181, 154, 0.12);
+    --skyline-subtle-hover: rgba(218, 181, 154, 0.20);
+
+    --thames-light: #9FB8D4;
+    --thames-dark: #5F81A3;
+    --thames-subtle: rgba(127, 161, 195, 0.12);
+
+    --notting-hill-light: #B07242;
+    --notting-hill-dark: #754318;
+    --notting-hill-subtle: rgba(149, 84, 37, 0.12);
+
+    /* Gradientes Aprimorados */
+    --gradient-hero: linear-gradient(135deg, #700420 0%, #5A0319 45%, #292828 100%);
+    --gradient-lovely: linear-gradient(135deg, #700420 0%, #8B0528 50%, #A52A45 100%);
+    --gradient-sunset: linear-gradient(135deg, #DAB59A 0%, #C19B7A 40%, #700420 100%);
+    --gradient-thames: linear-gradient(135deg, #7FA1C3 0%, #9FB8D4 50%, #DAB59A 100%);
+    --gradient-notting: linear-gradient(135deg, #955425 0%, #B07242 50%, #DAB59A 100%);
+    --gradient-overlay: linear-gradient(135deg, rgba(112, 4, 32, 0.75) 0%, rgba(41, 40, 40, 0.60) 50%, rgba(112, 4, 32, 0.80) 100%);
+    --gradient-glass: linear-gradient(135deg, rgba(255, 255, 255, 0.15) 0%, rgba(255, 255, 255, 0.05) 100%);
+
+    /* Sombras Coloridas */
+    --shadow-lovely: 0 8px 24px rgba(112, 4, 32, 0.20);
+    --shadow-lovely-lg: 0 16px 32px rgba(112, 4, 32, 0.28);
+    --shadow-skyline: 0 8px 24px rgba(218, 181, 154, 0.35);
+    --shadow-skyline-lg: 0 16px 32px rgba(218, 181, 154, 0.45);
+    --shadow-thames: 0 8px 24px rgba(127, 161, 195, 0.25);
+    --shadow-inset: inset 0 1px 3px rgba(0, 0, 0, 0.08);
+    --shadow-glass: 0 8px 32px rgba(0, 0, 0, 0.08);
+}
+
+/* =============================================================================
+   TOUR CARDS - MELHORIAS VISUAIS
+   ============================================================================= */
+
+.promo-card {
+    border: 1px solid var(--skyline-subtle);
+    position: relative;
+    overflow: hidden;
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.promo-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 3px;
+    background: var(--gradient-sunset);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    z-index: 3;
+}
+
+.promo-card:hover {
+    border-color: var(--skyline-dark);
+    box-shadow: var(--shadow-skyline-lg);
+    transform: translateY(-6px);
+}
+
+.promo-card:hover::before {
+    opacity: 1;
+}
+
+/* =============================================================================
+   HERO FEATURES - GLASSMORPHISM
+   ============================================================================= */
+
+.hero-feature-item {
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.15) 0%, rgba(255, 255, 255, 0.08) 100%);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1), inset 0 1px 0 rgba(255, 255, 255, 0.3);
+    transition: all 0.3s ease;
+}
+
+.hero-feature-item:hover {
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.20) 0%, rgba(255, 255, 255, 0.12) 100%);
+    transform: translateY(-4px);
+}
+
+.hero-feature-item::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 5%;
+    right: 5%;
+    height: 1px;
+    background: linear-gradient(90deg, transparent 0%, rgba(255, 255, 255, 0.4) 50%, transparent 100%);
+}
+
+/* =============================================================================
+   SECTION TITLES - ORNAMENTO
+   ============================================================================= */
+
+.section-title {
+    position: relative;
+    padding-bottom: var(--spacing-md);
+}
+
+.section-title::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60px;
+    height: 3px;
+    background: var(--gradient-sunset);
+    border-radius: var(--radius-full);
+}
+
+.section-title.left-aligned::after {
+    left: 0;
+    transform: none;
+}
+
+/* =============================================================================
+   BUTTONS - HOVER STATES SOFISTICADOS
+   ============================================================================= */
+
+.btn {
+    box-shadow: var(--shadow-md), inset 0 1px 0 rgba(255, 255, 255, 0.3);
+    border: 1px solid var(--skyline-subtle);
+    position: relative;
+    overflow: hidden;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.btn::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: var(--gradient-sunset);
+    transition: left 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    z-index: -1;
+}
+
+.btn:hover {
+    border-color: transparent;
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-lovely);
+}
+
+.btn:hover::after {
+    left: 0;
+}
+
+.btn-primary {
+    background: var(--gradient-lovely);
+    background-size: 200% auto;
+    background-position: left center;
+    border: none;
+    transition: background-position 0.4s ease, transform 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-position: right center;
+    box-shadow: var(--shadow-lovely-lg);
+}
+
+.btn-header {
+    position: relative;
+    overflow: hidden;
+}
+
+.btn-header::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 0;
+    height: 0;
+    background: var(--lovely);
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    transition: width 0.4s ease, height 0.4s ease;
+    z-index: -1;
+}
+
+.btn-header:hover::before {
+    width: 300px;
+    height: 300px;
+}
+
+/* =============================================================================
+   FEATURE ITEMS - CARDS PRINCIPAIS
+   ============================================================================= */
+
+.feature-item {
+    border: 1px solid var(--skyline-subtle);
+    position: relative;
+    transition: all 0.3s ease;
+}
+
+.feature-item:hover {
+    border-color: var(--skyline-dark);
+    box-shadow: var(--shadow-skyline);
+}
+
+.feature-item .icon {
+    position: relative;
+    overflow: hidden;
+}
+
+.feature-item .icon::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: var(--gradient-sunset);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.feature-item:hover .icon::before {
+    opacity: 0.15;
+}
+
+/* =============================================================================
+   GALLERY & TESTIMONIALS
+   ============================================================================= */
+
+.gallery-item {
+    border: 1px solid transparent;
+    transition: all 0.3s ease;
+}
+
+.gallery-item:hover {
+    border-color: var(--skyline);
+    box-shadow: var(--shadow-skyline);
+}
+
+.testimonial-card {
+    border: 1px solid var(--skyline-subtle);
+    box-shadow: var(--shadow-sm);
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+.testimonial-card:hover {
+    border-color: var(--skyline-dark);
+    box-shadow: var(--shadow-md);
+    transform: translateY(-4px);
+}
+
+.testimonial-text {
+    position: relative;
+    padding-top: var(--spacing-lg);
+}
+
+.testimonial-text::before {
+    content: '"';
+    position: absolute;
+    top: -10px;
+    left: -5px;
+    font-family: var(--font-display);
+    font-size: 3rem;
+    color: var(--skyline);
+    opacity: 0.25;
+    line-height: 1;
+}
+
+/* =============================================================================
+   SERVICE ITEMS
+   ============================================================================= */
+
+.service-item {
+    border: 1px solid var(--skyline-subtle);
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+.service-item:hover {
+    border-color: var(--skyline-dark);
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-skyline);
+}
+
+/* =============================================================================
+   BLOG POST CARDS
+   ============================================================================= */
+
+.blog-post-card {
+    border: 1px solid var(--skyline-subtle);
+}
+
+.blog-post-card:hover {
+    border-color: var(--skyline-dark);
+}
+
+.post-category-badge {
+    box-shadow: 0 2px 8px rgba(112, 4, 32, 0.25);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+/* =============================================================================
+   SOCIAL PROOF BADGES
+   ============================================================================= */
+
+.social-proof-badge {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+/* =============================================================================
+   FORM ELEMENTS
+   ============================================================================= */
+
+.contact-form input,
+.contact-form textarea,
+.contact-form select {
+    border: 1px solid var(--skyline-subtle);
+    transition: all 0.3s ease;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus,
+.contact-form select:focus {
+    border-color: var(--lovely);
+    box-shadow: 0 0 0 3px var(--lovely-subtle);
+}
+
+/* =============================================================================
+   NAVIGATION LINKS - UNDERLINE ANIMADO
+   ============================================================================= */
+
+.nav-link {
+    position: relative;
+}
+
+.nav-link::after {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: linear-gradient(90deg, var(--skyline) 0%, var(--lovely) 100%);
+    transition: width 0.3s ease;
+}
+
+.nav-link:hover::after,
+.nav-link.active::after {
+    width: 100%;
+}
+
+/* =============================================================================
+   SECTIONS - BACKGROUNDS ALTERNADOS
+   ============================================================================= */
+
+.section:nth-child(even) {
+    position: relative;
+}
+
+.section:nth-child(even)::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(135deg, var(--skyline-subtle) 0%, transparent 50%);
+    pointer-events: none;
+    z-index: 0;
+}
+
+.section:nth-child(even) > * {
+    position: relative;
+    z-index: 1;
+}
+
+/* =============================================================================
+   HERO TOUR CARDS
+   ============================================================================= */
+
+.hero-tour-card {
+    box-shadow: var(--shadow-xl);
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    transition: all 0.3s ease;
+}
+
+.hero-tour-card:hover {
+    border-color: rgba(255, 255, 255, 0.4);
+    box-shadow: var(--shadow-lovely-lg);
+}
+
+.hero-tour-label {
+    text-shadow: 0 2px 8px rgba(0,0,0,0.5), 0 1px 3px rgba(0,0,0,0.8);
+}
+
+/* =============================================================================
+   MODALS
+   ============================================================================= */
+
+.modal-backdrop {
+    background: linear-gradient(135deg, rgba(112, 4, 32, 0.85) 0%, rgba(41, 40, 40, 0.90) 100%);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+}
+
+.modal-content,
+.about-modal-content,
+.faq-modal-content {
+    background: rgba(255, 255, 255, 0.98);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border: 1px solid var(--skyline-subtle);
+    box-shadow: 0 24px 48px rgba(112, 4, 32, 0.25), inset 0 1px 0 rgba(255, 255, 255, 0.5);
+}
+
+/* =============================================================================
+   CLIENTS SECTION
+   ============================================================================= */
+
+.logos img {
+    transition: all 0.3s ease;
+    filter: grayscale(100%) opacity(0.6);
+}
+
+.logos img:hover {
+    filter: grayscale(0%) opacity(1);
+    transform: scale(1.05);
+}
+
+/* =============================================================================
+   SEPARADOR ELEGANTE
+   ============================================================================= */
+
+.section-divider {
+    width: 100%;
+    max-width: 200px;
+    height: 1px;
+    background: linear-gradient(90deg, transparent 0%, var(--skyline) 50%, transparent 100%);
+    margin: var(--spacing-3xl) auto;
+}
+
+/* =============================================================================
+   BACK TO TOP BUTTON
+   ============================================================================= */
+
+.back-to-top {
+    background: var(--gradient-lovely);
+    box-shadow: var(--shadow-lovely);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.back-to-top:hover {
+    box-shadow: var(--shadow-lovely-lg);
+    transform: translateY(-4px);
+}
+
+/* =============================================================================
+   UX & ACCESSIBILITY - ÁREAS DE TOQUE MOBILE (WCAG)
+   ============================================================================= */
+
+@media (max-width: 768px) {
+    .nav-link {
+        padding: 16px 20px;
+        font-size: 1.1rem;
+        min-height: 44px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .btn,
+    .btn-header,
+    .btn-primary,
+    .submit-btn {
+        min-height: 48px;
+        padding: 14px 24px;
+        font-size: 1rem;
+    }
+
+    .slider-dot {
+        width: 16px;
+        height: 16px;
+        min-width: 44px;
+        min-height: 44px;
+        position: relative;
+    }
+
+    .slider-dot::before {
+        content: '';
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 44px;
+        height: 44px;
+        cursor: pointer;
+    }
+
+    .slider-control-btn {
+        min-width: 48px;
+        min-height: 48px;
+    }
+
+    .social-links a {
+        min-width: 48px;
+        min-height: 48px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .language-toggle {
+        min-height: 48px;
+        padding: 12px 16px;
+    }
+}
+
+/* =============================================================================
+   ESTADOS DE FOCO VISÍVEIS E CONSISTENTES
+   ============================================================================= */
+
+*:focus-visible {
+    outline: 3px solid var(--lovely);
+    outline-offset: 3px;
+    box-shadow: 0 0 0 6px rgba(112, 4, 32, 0.2);
+    position: relative;
+    z-index: 100;
+}
+
+.btn:focus-visible,
+.btn-primary:focus-visible,
+.submit-btn:focus-visible {
+    outline: 3px solid #FFFFFF;
+    outline-offset: 2px;
+    box-shadow: 0 0 0 6px rgba(112, 4, 32, 0.4), 0 4px 12px rgba(112, 4, 32, 0.3);
+    z-index: 100;
+}
+
+.nav-link:focus-visible {
+    outline: 3px solid #FFFFFF;
+    outline-offset: 2px;
+    background: rgba(255, 255, 255, 0.15);
+    border-radius: 4px;
+    box-shadow: 0 0 0 6px rgba(255, 255, 255, 0.2);
+}
+
+input:focus-visible,
+textarea:focus-visible,
+select:focus-visible {
+    outline: 3px solid var(--lovely);
+    outline-offset: 2px;
+    border-color: var(--lovely);
+    box-shadow: 0 0 0 4px rgba(112, 4, 32, 0.15);
+}
+
+.promo-card:focus-visible,
+.tour-card:focus-visible,
+.gallery-item:focus-visible {
+    outline: 3px solid var(--lovely);
+    outline-offset: 3px;
+    box-shadow: 0 0 0 6px rgba(112, 4, 32, 0.2);
+}
+
+.slider-dot:focus-visible {
+    outline: 3px solid #FFFFFF;
+    outline-offset: 4px;
+    box-shadow: 0 0 0 6px rgba(255, 255, 255, 0.3);
+    transform: scale(1.4);
+}
+
+/* =============================================================================
+   CONTRASTE DE CORES (WCAG AA)
+   ============================================================================= */
+
+.section-subtitle,
+.tour-description,
+.post-meta {
+    color: #4B5563;
+}
+
+a:not(.btn):not(.nav-link) {
+    color: var(--lovely-dark);
+    text-decoration: underline;
+    text-decoration-color: rgba(112, 4, 32, 0.3);
+    text-underline-offset: 2px;
+}
+
+a:not(.btn):not(.nav-link):hover {
+    text-decoration-color: var(--lovely);
+}
+
+.post-category-badge,
+.tour-badge {
+    background: var(--lovely);
+    color: #FFFFFF;
+    font-weight: 600;
+}
+
+.social-proof-badge {
+    background: rgba(255, 255, 255, 0.98);
+    color: var(--blackfriars);
+    font-weight: 600;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.social-proof-badge-text {
+    color: var(--blackfriars);
+}
+
+/* =============================================================================
+   SCREEN READER ONLY
+   ============================================================================= */
+
+.sr-only,
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border-width: 0;
+}
+
+/* =============================================================================
+   TOOLTIPS
+   ============================================================================= */
+
+.social-links a {
+    position: relative;
+}
+
+.social-links a::after {
+    content: attr(aria-label);
+    position: absolute;
+    bottom: -35px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: rgba(0, 0, 0, 0.9);
+    color: white;
+    padding: 6px 12px;
+    border-radius: 4px;
+    font-size: 0.8rem;
+    white-space: nowrap;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease;
+    z-index: 1000;
+}
+
+.social-links a:hover::after,
+.social-links a:focus::after {
+    opacity: 1;
+}
+
+/* =============================================================================
+   BOTÃO WHATSAPP FLUTUANTE
+   ============================================================================= */
+
+.whatsapp-float {
+    position: fixed;
+    bottom: 24px;
+    right: 24px;
+    z-index: 999;
+    background: #25D366;
+    color: white;
+    padding: 16px 24px;
+    border-radius: 50px;
+    box-shadow: 0 8px 24px rgba(37, 211, 102, 0.4);
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    animation: pulse-whatsapp 2s infinite;
+    font-weight: 600;
+    font-size: 1rem;
+    border: none;
+}
+
+@keyframes pulse-whatsapp {
+    0%, 100% {
+        transform: scale(1);
+        box-shadow: 0 8px 24px rgba(37, 211, 102, 0.4);
+    }
+    50% {
+        transform: scale(1.05);
+        box-shadow: 0 12px 32px rgba(37, 211, 102, 0.5);
+    }
+}
+
+.whatsapp-float:hover {
+    transform: translateY(-4px) scale(1.05);
+    box-shadow: 0 12px 32px rgba(37, 211, 102, 0.6);
+    background: #20BA5A;
+}
+
+.whatsapp-float:focus-visible {
+    outline: 3px solid #25D366;
+    outline-offset: 4px;
+    box-shadow: 0 12px 32px rgba(37, 211, 102, 0.6), 0 0 0 6px rgba(37, 211, 102, 0.3);
+}
+
+.whatsapp-icon {
+    width: 32px;
+    height: 32px;
+    flex-shrink: 0;
+}
+
+.whatsapp-text {
+    font-size: 1rem;
+    font-weight: 600;
+    white-space: nowrap;
+}
+
+.whatsapp-badge {
+    background: rgba(255, 255, 255, 0.2);
+    padding: 4px 8px;
+    border-radius: 12px;
+    font-size: 0.75rem;
+    white-space: nowrap;
+}
+
+@media (max-width: 768px) {
+    .whatsapp-float {
+        width: 64px;
+        height: 64px;
+        padding: 0;
+        justify-content: center;
+        border-radius: 50%;
+        bottom: 20px;
+        right: 20px;
+    }
+
+    .whatsapp-text,
+    .whatsapp-badge {
+        display: none;
+    }
+
+    .whatsapp-icon {
+        width: 40px;
+        height: 40px;
+    }
+}
+
+/* =============================================================================
+   SKIP LINK APRIMORADO
+   ============================================================================= */
+
+.skip-link {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: var(--lovely);
+    color: var(--white);
+    padding: 12px 24px;
+    text-decoration: none;
+    z-index: 10000;
+    font-weight: 700;
+    transform: translateY(-100%);
+    transition: transform 0.3s ease;
+}
+
+.skip-link:focus {
+    transform: translateY(0);
+    outline: 3px solid #FFFFFF;
+    outline-offset: -3px;
+}
+
+/* =============================================================================
+   HERO SLIDER - MOBILE IMPROVEMENTS
+   ============================================================================= */
+
+@media (max-width: 768px) {
+    .hero-slider-container {
+        height: 70vh;
+        min-height: 500px;
+    }
+
+    .hero-features-grid,
+    .hero-tours-grid {
+        grid-template-columns: 1fr;
+        gap: var(--spacing-md);
+    }
+
+    .hero-slide::after {
+        background: rgba(0, 0, 0, 0.65);
+    }
+
+    .hero-content h1 {
+        font-size: clamp(1.75rem, 8vw, 2.5rem);
+        text-shadow: 0 4px 20px rgba(0,0,0,0.9), 0 2px 8px rgba(0,0,0,0.7), 0 1px 3px rgba(0,0,0,0.9);
+    }
+
+    .hero-content p {
+        text-shadow: 0 2px 12px rgba(0,0,0,0.9), 0 1px 6px rgba(0,0,0,0.8);
+    }
+}
+
+/* =============================================================================
+   FORMULÁRIO - VALIDAÇÃO EM TEMPO REAL
+   ============================================================================= */
+
+input.error,
+textarea.error,
+select.error {
+    border-color: #DC2626;
+    background: rgba(220, 38, 38, 0.05);
+}
+
+input.error:focus,
+textarea.error:focus,
+select.error:focus {
+    outline-color: #DC2626;
+    box-shadow: 0 0 0 3px rgba(220, 38, 38, 0.15);
+}
+
+input.success,
+textarea.success,
+select.success {
+    border-color: #10B981;
+    background: rgba(16, 185, 129, 0.05);
+}
+
+input.success:focus,
+textarea.success:focus,
+select.success:focus {
+    outline-color: #10B981;
+    box-shadow: 0 0 0 3px rgba(16, 185, 129, 0.15);
+}
+
+.error-message {
+    display: none;
+    color: #DC2626;
+    font-size: 0.875rem;
+    margin-top: 4px;
+    font-weight: 500;
+}
+
+.error-message.visible {
+    display: block;
+}
+
+.field-icon {
+    position: absolute;
+    right: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    pointer-events: none;
+}
+
+.field-icon svg {
+    width: 20px;
+    height: 20px;
+}
+
+.field-icon.error svg {
+    stroke: #DC2626;
+}
+
+.field-icon.success svg {
+    stroke: #10B981;
+}
+
+/* =============================================================================
+   LOADING STATES PARA BOTÕES
+   ============================================================================= */
+
+.btn.loading,
+.btn-primary.loading,
+.submit-btn.loading {
+    position: relative;
+    color: transparent;
+    pointer-events: none;
+    cursor: not-allowed;
+}
+
+.btn.loading::after,
+.btn-primary.loading::after,
+.submit-btn.loading::after {
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    top: 50%;
+    left: 50%;
+    margin: -10px 0 0 -10px;
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    border-top-color: white;
+    border-radius: 50%;
+    animation: spin-loader 0.6s linear infinite;
+    z-index: 10;
+}
+
+@keyframes spin-loader {
+    to { transform: rotate(360deg); }
+}
+
+.btn.success,
+.btn-primary.success,
+.submit-btn.success {
+    background-color: #10B981;
+    transform: scale(1.05);
+    transition: all 0.3s ease;
+}
+
+.btn.success::before,
+.btn-primary.success::before,
+.submit-btn.success::before {
+    content: '✓';
+    margin-right: 8px;
+    font-weight: bold;
+}
+
+/* =============================================================================
+   RESPEITAR PREFERS-REDUCED-MOTION
+   ============================================================================= */
+
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
+
+    .hero-bg,
+    .page-transition-overlay,
+    .fade-in,
+    .fade-in-stagger {
+        animation: none !important;
+    }
+
+    .btn:hover,
+    .promo-card:hover,
+    .feature-item:hover {
+        transform: none !important;
+    }
+}
+
+/* =============================================================================
+   TABINDEX E ORDEM DE NAVEGAÇÃO
+   ============================================================================= */
+
+.hero-tour-card,
+.gallery-item,
+.promo-card {
+    cursor: pointer;
+}
+
+/* =============================================================================
+   HIGH CONTRAST MODE
+   ============================================================================= */
+
+@media (prefers-contrast: high) {
+    .btn,
+    .btn-primary,
+    .nav-link {
+        border: 2px solid currentColor;
+    }
+
+    .promo-card,
+    .feature-item,
+    .testimonial-card {
+        border: 2px solid currentColor;
+    }
+}
+
+/* =============================================================================
+   MELHORIAS DE IMPRESSÃO
+   ============================================================================= */
+
+@media print {
+    .header,
+    .footer,
+    .whatsapp-float,
+    .back-to-top,
+    .slider-controls {
+        display: none !important;
+    }
+
+    * {
+        color: #000 !important;
+        background: #fff !important;
+    }
+
+    a[href]::after {
+        content: " (" attr(href) ")";
+        font-size: 0.8em;
+        color: #666 !important;
+    }
+}
+
+/* =============================================================================
+   MELHORIAS ESPECÍFICAS MOBILE
+   ============================================================================= */
+
+@media (max-width: 768px) {
+    .nav-link + .nav-link {
+        margin-top: 8px;
+    }
+
+    .btn,
+    .btn-primary,
+    .submit-btn {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .form-group + .form-group {
+        margin-top: var(--spacing-lg);
+    }
+
+    input,
+    textarea,
+    select {
+        font-size: 16px;
+    }
+
+    /* Reduzir border-radius em mobile */
+    :root {
+        --radius-lg: 6px;
+        --radius-xl: 10px;
+        --radius-2xl: 12px;
+    }
+
+    .promo-card:hover,
+    .feature-item:hover,
+    .service-item:hover {
+        transform: translateY(-3px);
+    }
+}
+
+/* =============================================================================
+   PRINT STYLES - REMOVER EFEITOS
+   ============================================================================= */
+
+@media print {
+    * {
+        box-shadow: none !important;
+        text-shadow: none !important;
+        filter: none !important;
+    }
+}
+
+/* =============================================================================
+   DARK MODE PREPARATION (FUTURO)
+   ============================================================================= */
+
+@media (prefers-color-scheme: dark) {
+    /* Preparado para futuro modo escuro */
+}
